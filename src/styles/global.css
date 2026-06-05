@@ -326,6 +326,14 @@ h3 {
     var(--navy);
   color: var(--gold);
   font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.post-image img {
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
 }
 
 .latest-post > p:not(.post-date):not(.post-category) {

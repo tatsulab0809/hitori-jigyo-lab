@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Codexと一緒にサイト公開まで進めた記録</title>
+  <desc id="desc">デジタルが苦手な事業主が、Codexに案内されながらサイトを公開する様子を描いた手描き風イラスト</desc>
+  <rect width="1200" height="675" fill="#102745"/>
+  <rect x="70" y="64" width="1060" height="548" rx="36" fill="#f7f0e3"/>
+  <path d="M108 135h984" fill="none" stroke="#102745" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="151" cy="102" r="16" fill="#d9a735" stroke="#102745" stroke-width="8"/>
+  <circle cx="207" cy="102" r="16" fill="#f8df9e" stroke="#102745" stroke-width="8"/>
+  <circle cx="263" cy="102" r="16" fill="#fff" stroke="#102745" stroke-width="8"/>
+
+  <g transform="translate(118 178)">
+    <rect x="0" y="0" width="476" height="286" rx="24" fill="#ffffff" stroke="#102745" stroke-width="14"/>
+    <rect x="38" y="45" width="178" height="28" rx="8" fill="#d9a735"/>
+    <rect x="38" y="96" width="292" height="20" rx="8" fill="#102745"/>
+    <rect x="38" y="137" width="372" height="20" rx="8" fill="#102745"/>
+    <rect x="38" y="178" width="250" height="20" rx="8" fill="#102745"/>
+    <rect x="332" y="45" width="92" height="92" rx="20" fill="#f8df9e" stroke="#102745" stroke-width="10"/>
+    <path d="M357 92h43M379 71v43" stroke="#102745" stroke-width="12" stroke-linecap="round"/>
+    <rect x="116" y="248" width="244" height="64" rx="14" fill="#d9a735" stroke="#102745" stroke-width="10"/>
+    <text x="238" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="30" fill="#102745">公開</text>
+  </g>
+
+  <g transform="translate(664 184)">
+    <path d="M160 21c76 0 137 62 137 139s-61 139-137 139S23 237 23 160 84 21 160 21z" fill="#ffffff" stroke="#102745" stroke-width="14"/>
+    <path d="M103 152c8-28 36-47 68-43 29 4 52 25 59 52" fill="none" stroke="#102745" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="113" cy="118" r="12" fill="#102745"/>
+    <circle cx="213" cy="118" r="12" fill="#102745"/>
+    <path d="M133 199c24 22 59 22 83 0" fill="none" stroke="#102745" stroke-width="12" stroke-linecap="round"/>
+    <path d="M66 80c30-44 87-62 143-42 22 8 42 22 58 41" fill="none" stroke="#d9a735" stroke-width="18" stroke-linecap="round"/>
+    <rect x="286" y="112" width="184" height="110" rx="22" fill="#102745" stroke="#102745" stroke-width="12"/>
+    <rect x="318" y="142" width="82" height="14" rx="7" fill="#fff"/>
+    <rect x="318" y="173" width="118" height="14" rx="7" fill="#d9a735"/>
+    <path d="M460 83l34 34-34 34" fill="none" stroke="#d9a735" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M303 289c44 41 108 41 152 0" fill="none" stroke="#102745" stroke-width="16" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(126 523)">
+    <path d="M0 38c92-52 180-52 264 0s174 52 270 0 190-52 282 0" fill="none" stroke="#d9a735" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="0" cy="38" r="20" fill="#ffffff" stroke="#102745" stroke-width="10"/>
+    <circle cx="264" cy="38" r="20" fill="#f8df9e" stroke="#102745" stroke-width="10"/>
+    <circle cx="534" cy="38" r="20" fill="#ffffff" stroke="#102745" stroke-width="10"/>
+    <circle cx="816" cy="38" r="20" fill="#d9a735" stroke="#102745" stroke-width="10"/>
+  </g>
+
+  <text x="600" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="34" fill="#102745">スクショを見せて、お願いして、公開まで</text>
+</svg>

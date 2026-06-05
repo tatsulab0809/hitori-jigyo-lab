@@ -1,5 +1,13 @@
 export const articles = [
   {
+    title: "Codexと一緒にサイト公開まで進めた記録",
+    description: "デジタルが得意ではない事業主が、Codexに相談しながらAstroサイトを作り、GitHubとCloudflare Pagesで公開するまでの実験ログです。",
+    href: "/articles/codex-site-launch-record/",
+    category: "副業実験ログ",
+    date: "2026-06-05",
+    image: "/images/eyecatch-codex-launch.svg"
+  },
+  {
     title: "ひとり事業ラボとは",
     description: "このサイトで試すこと、TATSUが記録すること、読者に届けたいことをまとめます。",
     href: "/articles/about-hitori-jigyo-lab/",
