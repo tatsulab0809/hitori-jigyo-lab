@@ -1,7 +1,29 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { articles } from "../../../data/articles.js";
+
+const categoryArticles = articles.filter((article) => article.category === "副業実験ログ");
 ---
 
 <BaseLayout title="副業実験ログ | ひとり事業ラボ">
-  <section class="page-heading"><p class="eyebrow">Category</p><h1>副業実験ログ</h1><p>試した副業モデル、作業時間、結果、失敗、次に変えることを記録します。</p></section>
+  <section class="page-heading">
+    <p class="eyebrow">Category</p>
+    <h1>副業実験ログ</h1>
+    <p>試した副業モデル、作業時間、結果、失敗、次に変えることを記録します。</p>
+  </section>
+  <section class="article-index">
+    <div class="article-index-grid">
+      {categoryArticles.map((article) => (
+        <a class="index-card" href={article.href}>
+          <img src={article.image} alt="" />
+          <div>
+            <p class="card-meta">{article.category} / {article.date}</p>
+            <h2>{article.title}</h2>
+            <p>{article.description}</p>
+            <span>READ MORE</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
 </BaseLayout>

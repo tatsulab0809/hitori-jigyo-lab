@@ -1,7 +1,36 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { articles } from "../../../data/articles.js";
+
+const categoryArticles = articles.filter((article) => article.category === "作業環境");
 ---
 
 <BaseLayout title="作業環境 | ひとり事業ラボ">
-  <section class="page-heading"><p class="eyebrow">Category</p><h1>作業環境</h1><p>在宅作業を続けやすくするデスク環境、ガジェット、集中グッズを扱います。</p></section>
+  <section class="page-heading">
+    <p class="eyebrow">Category</p>
+    <h1>作業環境</h1>
+    <p>在宅作業を続けやすくするデスク環境、ガジェット、集中グッズを扱います。</p>
+  </section>
+  <section class="article-index">
+    {categoryArticles.length > 0 ? (
+      <div class="article-index-grid">
+        {categoryArticles.map((article) => (
+          <a class="index-card" href={article.href}>
+            <img src={article.image} alt="" />
+            <div>
+              <p class="card-meta">{article.category} / {article.date}</p>
+              <h2>{article.title}</h2>
+              <p>{article.description}</p>
+              <span>READ MORE</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <div class="note-box">
+        <h2>記事準備中</h2>
+        <p>作業環境カテゴリの記事はこれから追加予定です。デスク環境、モニター、椅子、マイクなど、ひとり事業を続けやすくする道具を扱います。</p>
+      </div>
+    )}
+  </section>
 </BaseLayout>

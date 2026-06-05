@@ -1,7 +1,29 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { articles } from "../../../data/articles.js";
+
+const categoryArticles = articles.filter((article) => article.category === "AIとツール活用");
 ---
 
 <BaseLayout title="AIとツール活用 | ひとり事業ラボ">
-  <section class="page-heading"><p class="eyebrow">Category</p><h1>AIとツール活用</h1><p>ChatGPT、Codex、Canva、Notionなど、ひとり事業を進めるための道具を扱います。</p></section>
+  <section class="page-heading">
+    <p class="eyebrow">Category</p>
+    <h1>AIとツール活用</h1>
+    <p>ChatGPT、Codex、Canva、Notionなど、ひとり事業を進めるための道具を扱います。</p>
+  </section>
+  <section class="article-index">
+    <div class="article-index-grid">
+      {categoryArticles.map((article) => (
+        <a class="index-card" href={article.href}>
+          <img src={article.image} alt="" />
+          <div>
+            <p class="card-meta">{article.category} / {article.date}</p>
+            <h2>{article.title}</h2>
+            <p>{article.description}</p>
+            <span>READ MORE</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
 </BaseLayout>
