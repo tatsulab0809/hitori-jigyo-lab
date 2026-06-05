@@ -1,5 +1,13 @@
 export const articles = [
   {
+    title: "個人事業主がホームページに用意したいページ構成",
+    description: "サービス内容だけでなく、人となり、料金、よくある不安まで伝えるために、個人事業主のホームページに必要なページを整理します。",
+    href: "/articles/solo-owner-homepage-page-structure/",
+    category: "小さな事業設計",
+    date: "2026-06-05",
+    image: "/images/eyecatch-homepage-page-structure.svg"
+  },
+  {
     title: "建設業の1人親方がホームページに載せるべき内容",
     description: "仕事が回っている時ほど後回しにしがちなホームページについて、1人親方目線で載せるべき内容と作り方を整理します。",
     href: "/articles/construction-one-man-homepage-content/",
