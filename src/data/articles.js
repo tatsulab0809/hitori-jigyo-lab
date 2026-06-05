@@ -1,7 +1,7 @@
 export const articles = [
   {
     title: "Codexと一緒にサイト公開まで進めた記録",
-    description: "デジタルが得意ではない事業主が、Codexに相談しながらAstroサイトを作り、GitHubとCloudflare Pagesで公開するまでの実験ログです。",
+    description: "デジタルが得意ではない事業主が、Codexに相談しながらAstroサイトを作り、独自ドメインで公開するまでの実験ログです。",
     href: "/articles/codex-site-launch-record/",
     category: "副業実験ログ",
     date: "2026-06-05",

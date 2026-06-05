@@ -4,7 +4,7 @@ import ArticleLayout from "../../../layouts/ArticleLayout.astro";
 
 <ArticleLayout
   title="Codexと一緒にサイト公開まで進めた記録"
-  description="デジタルが得意ではない事業主が、Codexに相談しながらAstroサイトを作り、GitHubとCloudflare Pagesで公開するまでの実験ログです。"
+  description="デジタルが得意ではない事業主が、Codexに相談しながらAstroサイトを作り、独自ドメインで公開するまでの実験ログです。"
   category="副業実験ログ"
   date="2026-06-05"
   heroImage="/images/eyecatch-codex-launch.svg"
@@ -56,6 +56,13 @@ import ArticleLayout from "../../../layouts/ArticleLayout.astro";
   <p>普通に業者へ依頼すれば、ホームページ制作には大きなお金がかかります。さらに、あとから文章を変えたい、写真を追加したい、デザインを少し変えたいとなると、そのたびに費用がかかることもあります。</p>
   <p>もちろん、制作会社に頼む価値がある場面もあります。ただ、小さく始めたい事業主にとって、最初から大きな制作費をかけるのは重い判断です。</p>
   <p>Codexがあれば、まず自分で小さく作る。公開する。反応を見る。必要に応じて直す。この流れを自分のペースで回せます。</p>
+
+  <h2>最終的に独自ドメインで公開できた</h2>
+  <p>その後、Xserverドメインで取得した <strong>hitori-jigyo-lab.com</strong> をCloudflareに登録し、ネームサーバーをCloudflare指定のものに変更しました。</p>
+  <p>ネームサーバーの反映には少し待ち時間がありました。画面には「1〜2時間、場合によっては24時間」と出ていて、こちらとしては急に待ちの姿勢です。現場なら次の段取りに移れるのですが、DNS相手だと腕組みして待つしかありません。</p>
+  <p>反映後、Cloudflare側で「Your domain is now protected by Cloudflare」と表示され、さらにWorkers & Pagesのプロジェクトに <strong>hitori-jigyo-lab.com</strong> を接続しました。</p>
+  <p>これで、仮URLではなく、正式な独自ドメインでサイトを公開できました。つまり、URLを知っている人なら誰でも見られる状態です。</p>
+  <p>ここまで来ると、ただの練習ではなく、本当に自分のメディアを一つ立ち上げた感覚があります。小さな一歩ですが、事業主にとってはかなり大きい一歩です。</p>
 
   <h2>大事なのは、自分の経験を入れること</h2>
   <p>ただ、Codexに作ってもらえば何でも良いわけではありません。</p>
