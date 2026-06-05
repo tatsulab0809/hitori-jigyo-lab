@@ -1,12 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
   <title id="title">AIで書類作成を短縮</title>
-  <desc id="desc">書類の山がAIツールで小さくなる様子を描いたネイビー調の手描き風アイキャッチ</desc>
+  <desc id="desc">机で書類の山と向き合う事業主をAIが助ける手描き風アイキャッチ</desc>
   <rect width="1200" height="700" fill="#102744"/>
-  <rect x="120" y="145" width="280" height="390" rx="18" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
-  <rect x="175" y="110" width="280" height="390" rx="18" fill="#f8f5ec" stroke="#102744" stroke-width="10"/>
-  <rect x="230" y="80" width="280" height="390" rx="18" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
-  <path d="M290 190 h160 M290 260 h120 M290 330 h150" stroke="#102744" stroke-width="18" stroke-linecap="round"/>
-  <rect x="700" y="180" width="300" height="260" rx="34" fill="#f8f5ec" stroke="#d39f31" stroke-width="12"/>
-  <text x="850" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="96" font-weight="700" fill="#102744">AI</text>
-  <path d="M570 330 C620 270 650 270 690 310" fill="none" stroke="#d39f31" stroke-width="18" stroke-linecap="round"/>
+  <rect x="80" y="450" width="1040" height="150" rx="28" fill="#d39f31"/>
+  <circle cx="330" cy="250" r="56" fill="#ffd7b0" stroke="#071527" stroke-width="10"/>
+  <path d="M275 245 C295 170 385 180 398 250" fill="#071527"/>
+  <rect x="255" y="315" width="155" height="150" rx="28" fill="#5ba3b8" stroke="#071527" stroke-width="10"/>
+  <path d="M300 390 L230 450 M390 390 L485 450" stroke="#071527" stroke-width="14" stroke-linecap="round"/>
+  <rect x="520" y="155" width="180" height="245" rx="18" fill="#fffaf0" stroke="#071527" stroke-width="10"/>
+  <rect x="575" y="125" width="180" height="245" rx="18" fill="#fffaf0" stroke="#d39f31" stroke-width="10"/>
+  <rect x="630" y="95" width="180" height="245" rx="18" fill="#fffaf0" stroke="#071527" stroke-width="10"/>
+  <path d="M675 175 h95 M675 225 h75 M675 275 h105" stroke="#071527" stroke-width="12" stroke-linecap="round"/>
+  <rect x="850" y="185" width="190" height="140" rx="30" fill="#fffaf0" stroke="#d39f31" stroke-width="12"/>
+  <text x="945" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#102744">AI</text>
+  <path d="M815 285 C835 250 850 248 867 265" fill="none" stroke="#d39f31" stroke-width="12" stroke-linecap="round"/>
 </svg>

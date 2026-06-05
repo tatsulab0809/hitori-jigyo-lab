@@ -1,11 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
   <title id="title">本業と副業をAIで進める</title>
-  <desc id="desc">本業と副業の二つの道をAIがつなぐネイビー調の手描き風アイキャッチ</desc>
+  <desc id="desc">現場から帰った事業主が家で猫のそばで副業作業をする手描き風アイキャッチ</desc>
   <rect width="1200" height="700" fill="#102744"/>
-  <path d="M180 520 C360 260 430 260 590 520" fill="none" stroke="#f8f5ec" stroke-width="26" stroke-linecap="round"/>
-  <path d="M610 520 C770 260 840 260 1020 520" fill="none" stroke="#d39f31" stroke-width="26" stroke-linecap="round"/>
-  <rect x="210" y="170" width="260" height="140" rx="26" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
-  <rect x="730" y="170" width="260" height="140" rx="26" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
-  <text x="340" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#102744">本業</text>
-  <text x="860" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#102744">副業</text>
+  <path d="M80 490 C230 260 360 260 520 490" fill="none" stroke="#d39f31" stroke-width="24" stroke-linecap="round"/>
+  <path d="M620 490 C770 260 900 260 1060 490" fill="none" stroke="#fffaf0" stroke-width="24" stroke-linecap="round"/>
+  <rect x="165" y="185" width="210" height="110" rx="24" fill="#fffaf0" stroke="#d39f31" stroke-width="9"/>
+  <text x="270" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#102744">本業</text>
+  <rect x="795" y="185" width="210" height="110" rx="24" fill="#fffaf0" stroke="#d39f31" stroke-width="9"/>
+  <text x="900" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#102744">副業</text>
+  <circle cx="570" cy="275" r="48" fill="#ffd7b0" stroke="#fffaf0" stroke-width="8"/>
+  <path d="M525 268 C540 205 620 215 635 275" fill="#071527"/>
+  <rect x="515" y="335" width="130" height="140" rx="30" fill="#5ba3b8" stroke="#fffaf0" stroke-width="8"/>
+  <rect x="680" y="375" width="190" height="100" rx="18" fill="#fffaf0" stroke="#d39f31" stroke-width="9"/>
+  <path d="M535 390 L455 455 M640 390 L705 440" stroke="#fffaf0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M905 405 C930 380 980 390 990 430 C1000 470 965 495 925 490 C885 485 875 435 905 405Z" fill="#fffaf0" stroke="#d39f31" stroke-width="8"/>
 </svg>

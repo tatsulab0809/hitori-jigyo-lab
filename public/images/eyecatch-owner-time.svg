@@ -1,11 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
   <title id="title">事業主の時間</title>
-  <desc id="desc">時計と工具、書類を組み合わせたネイビー調の手描き風アイキャッチ</desc>
-  <rect width="1200" height="700" fill="#102744"/>
-  <circle cx="600" cy="350" r="190" fill="#f8f5ec" stroke="#d39f31" stroke-width="16"/>
-  <path d="M600 230 v135 l95 70" stroke="#102744" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M210 500 h210" stroke="#d39f31" stroke-width="22" stroke-linecap="round"/>
-  <path d="M780 180 h180 M780 250 h130 M780 320 h170" stroke="#f8f5ec" stroke-width="20" stroke-linecap="round"/>
-  <rect x="140" y="160" width="210" height="230" rx="20" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
-  <path d="M190 230 h110 M190 290 h85" stroke="#102744" stroke-width="16" stroke-linecap="round"/>
+  <desc id="desc">時計を抱えながら書類と電話に追われる事業主の手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#f7f2e8"/>
+  <rect x="90" y="105" width="1020" height="490" rx="36" fill="#102744"/>
+  <circle cx="585" cy="345" r="150" fill="#fffaf0" stroke="#d39f31" stroke-width="14"/>
+  <path d="M585 245 v105 l78 55" stroke="#102744" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="270" cy="270" r="50" fill="#ffd7b0" stroke="#fffaf0" stroke-width="8"/>
+  <path d="M220 260 C245 190 325 202 333 268" fill="#071527"/>
+  <rect x="205" y="330" width="135" height="120" rx="30" fill="#d39f31" stroke="#fffaf0" stroke-width="8"/>
+  <path d="M345 380 L445 330 M195 380 L130 430" stroke="#fffaf0" stroke-width="12" stroke-linecap="round"/>
+  <rect x="805" y="185" width="180" height="230" rx="18" fill="#fffaf0" stroke="#d39f31" stroke-width="10"/>
+  <path d="M845 250 h95 M845 300 h70 M845 350 h105" stroke="#102744" stroke-width="12" stroke-linecap="round"/>
+  <rect x="830" y="445" width="150" height="55" rx="18" fill="#d39f31"/>
 </svg>

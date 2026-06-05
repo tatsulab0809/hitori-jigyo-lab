@@ -1,11 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
-  <title id="title">ホームページ作成前の判断</title>
-  <desc id="desc">ネイビーの背景に、家の形をしたホームページとチェックリストを描いた手描き風アイキャッチ</desc>
-  <rect width="1200" height="700" fill="#102744"/>
-  <rect x="120" y="120" width="420" height="360" rx="28" fill="#f8f5ec" stroke="#d39f31" stroke-width="12"/>
-  <path d="M160 260 L330 150 L500 260" fill="none" stroke="#102744" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="230" y="270" width="200" height="150" rx="14" fill="#d39f31"/>
-  <rect x="660" y="155" width="360" height="390" rx="28" fill="#f8f5ec" stroke="#d39f31" stroke-width="12"/>
-  <path d="M720 250 h200 M720 330 h250 M720 410 h170" stroke="#102744" stroke-width="20" stroke-linecap="round"/>
-  <path d="M700 245 l28 28 l54 -70" fill="none" stroke="#d39f31" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <title id="title">事業主がホームページ作成を考える場面</title>
+  <desc id="desc">作業着の事業主が家の前でホームページの構成を考えている手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#f7f2e8"/>
+  <rect x="0" y="500" width="1200" height="200" fill="#102744"/>
+  <path d="M660 255 L820 140 L980 255 V505 H660 Z" fill="#fffaf0" stroke="#102744" stroke-width="12" stroke-linejoin="round"/>
+  <rect x="730" y="330" width="90" height="175" fill="#d39f31" stroke="#102744" stroke-width="10"/>
+  <rect x="860" y="315" width="70" height="70" rx="10" fill="#b7d7e8" stroke="#102744" stroke-width="9"/>
+  <circle cx="320" cy="250" r="58" fill="#ffd7b0" stroke="#102744" stroke-width="10"/>
+  <path d="M260 244 C280 170 380 170 396 245" fill="#102744"/>
+  <rect x="245" y="315" width="160" height="190" rx="34" fill="#d39f31" stroke="#102744" stroke-width="10"/>
+  <path d="M260 380 L160 450 M390 380 L520 430" stroke="#102744" stroke-width="16" stroke-linecap="round"/>
+  <rect x="110" y="405" width="210" height="120" rx="18" fill="#fffaf0" stroke="#102744" stroke-width="10"/>
+  <path d="M145 455 h135 M145 490 h90" stroke="#102744" stroke-width="12" stroke-linecap="round"/>
+  <path d="M515 388 h140 v95 h-140z" fill="#fffaf0" stroke="#102744" stroke-width="10"/>
+  <path d="M545 430 h80 M545 462 h55" stroke="#d39f31" stroke-width="12" stroke-linecap="round"/>
 </svg>

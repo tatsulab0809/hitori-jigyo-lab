@@ -1,9 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
   <title id="title">AIにホームページ相談</title>
-  <desc id="desc">吹き出しとホームページ画面を描いたネイビー調の手描き風アイキャッチ</desc>
-  <rect width="1200" height="700" fill="#102744"/>
-  <rect x="130" y="150" width="420" height="310" rx="28" fill="#f8f5ec" stroke="#d39f31" stroke-width="12"/>
-  <path d="M190 240 h300 M190 320 h230 M190 400 h160" stroke="#102744" stroke-width="20" stroke-linecap="round"/>
-  <path d="M680 170 h300 a50 50 0 0 1 50 50 v150 a50 50 0 0 1 -50 50 h-120 l-80 80 v-80 h-100 a50 50 0 0 1 -50 -50 v-150 a50 50 0 0 1 50 -50z" fill="#f8f5ec" stroke="#d39f31" stroke-width="12"/>
-  <text x="830" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="82" font-weight="700" fill="#102744">AI?</text>
+  <desc id="desc">猫のそばでホームページの相談をしている事業主の手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#f7f2e8"/>
+  <rect x="80" y="470" width="1040" height="110" rx="28" fill="#d39f31"/>
+  <rect x="170" y="180" width="355" height="230" rx="28" fill="#102744" stroke="#d39f31" stroke-width="12"/>
+  <rect x="210" y="225" width="275" height="95" rx="12" fill="#fffaf0"/>
+  <path d="M240 350 h200" stroke="#fffaf0" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="705" cy="260" r="50" fill="#ffd7b0" stroke="#102744" stroke-width="9"/>
+  <path d="M655 252 C675 185 760 195 775 260" fill="#102744"/>
+  <rect x="640" y="325" width="140" height="145" rx="30" fill="#5ba3b8" stroke="#102744" stroke-width="9"/>
+  <path d="M625 380 L540 455 M775 380 L860 455" stroke="#102744" stroke-width="13" stroke-linecap="round"/>
+  <path d="M905 395 C935 360 990 375 1005 420 C1015 455 990 485 940 482 C890 478 875 430 905 395Z" fill="#fffaf0" stroke="#102744" stroke-width="9"/>
+  <path d="M912 395 l-20 -35 M970 383 l25 -32" stroke="#102744" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="928" cy="425" r="7" fill="#102744"/><circle cx="970" cy="425" r="7" fill="#102744"/>
+  <path d="M930 454 C945 465 958 465 972 454" fill="none" stroke="#102744" stroke-width="7" stroke-linecap="round"/>
+  <path d="M520 150 h250 a38 38 0 0 1 38 38 v58 a38 38 0 0 1 -38 38 h-68 l-48 45 v-45 h-134 a38 38 0 0 1 -38 -38 v-58 a38 38 0 0 1 38 -38z" fill="#fffaf0" stroke="#d39f31" stroke-width="10"/>
+  <text x="645" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#102744">AI?</text>
 </svg>
