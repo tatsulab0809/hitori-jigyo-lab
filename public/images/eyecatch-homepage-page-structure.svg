@@ -1,33 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">個人事業主のホームページ構成</title>
-  <desc id="desc">男性の個人事業主がホームページの構成をノートに整理している漫画風イラスト</desc>
-  <rect width="1200" height="630" fill="#102744"/>
-  <rect x="86" y="70" width="1028" height="488" rx="30" fill="#fff7e8"/>
-  <rect x="128" y="408" width="944" height="88" rx="20" fill="#f0d9a3"/>
-  <rect x="638" y="122" width="340" height="236" rx="20" fill="#102744" stroke="#0b1b31" stroke-width="10"/>
-  <rect x="674" y="160" width="268" height="160" rx="12" fill="#fffaf0"/>
-  <rect x="704" y="190" width="86" height="22" rx="8" fill="#d59f2f"/>
-  <path d="M704 242h198M704 282h142" stroke="#102744" stroke-width="12" stroke-linecap="round"/>
-  <rect x="812" y="184" width="86" height="42" rx="10" fill="#ffffff" stroke="#102744" stroke-width="8"/>
-  <circle cx="855" cy="204" r="9" fill="#d59f2f"/>
-  <rect x="760" y="372" width="116" height="22" rx="8" fill="#102744"/>
-  <rect x="984" y="142" width="96" height="76" rx="18" fill="#f7dda0" stroke="#0b1b31" stroke-width="8"/>
-  <path d="M1032 164v34M1015 181h34" stroke="#102744" stroke-width="9" stroke-linecap="round"/>
-  <circle cx="1018" cy="414" r="40" fill="#d59f2f" stroke="#0b1b31" stroke-width="8"/>
-  <path d="M998 414h40M1018 394v40" stroke="#102744" stroke-width="8" stroke-linecap="round"/>
+  <desc id="desc">個人事業主が付箋とノートでホームページのページ構成を考えている漫画風イラスト</desc>
+  <rect width="1200" height="630" fill="#fbf4e8"/>
+  <path d="M58 440c184 30 330 12 520 22 246 14 380 46 560-12v132H58z" fill="#d59f2f" opacity=".86"/>
+  <rect x="90" y="86" width="340" height="250" rx="24" fill="#102744" stroke="#0b1b31" stroke-width="10"/>
+  <rect x="124" y="124" width="272" height="172" rx="14" fill="#fffaf0"/>
+  <circle cx="184" cy="190" r="34" fill="#f8d9b3" stroke="#0b1b31" stroke-width="7"/>
+  <path d="M154 180c8-28 36-42 64-28 16 8 24 20 28 36-28-12-54-8-92-8z" fill="#1c2b43" stroke="#0b1b31" stroke-width="6"/>
+  <circle cx="174" cy="198" r="4" fill="#0b1b31"/>
+  <circle cx="198" cy="198" r="4" fill="#0b1b31"/>
+  <path d="M174 224c14 9 30 9 44 0" fill="none" stroke="#0b1b31" stroke-width="5" stroke-linecap="round"/>
+  <path d="M262 164h84M262 202h104M262 242h68" stroke="#102744" stroke-width="10" stroke-linecap="round"/>
+  <rect x="146" y="260" width="88" height="24" rx="9" fill="#d59f2f"/>
 
-  <path d="M318 352c-48 28-80 80-86 142h284c-6-62-38-114-86-142-32 22-80 22-112 0z" fill="#ffffff" stroke="#0b1b31" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M290 424h168" stroke="#d59f2f" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="374" cy="248" r="82" fill="#f8d9b3" stroke="#0b1b31" stroke-width="10"/>
-  <path d="M304 218c6-58 52-92 108-84 42 6 70 32 84 76-24-12-54-14-86-7-36 9-72 2-106 15z" fill="#24344d" stroke="#0b1b31" stroke-width="9" stroke-linejoin="round"/>
-  <path d="M314 236c-22 0-38 17-38 40 0 22 16 40 38 40M434 236c22 0 38 17 38 40 0 22-16 40-38 40" fill="#f8d9b3" stroke="#0b1b31" stroke-width="10" stroke-linecap="round"/>
-  <circle cx="342" cy="270" r="8" fill="#0b1b31"/>
-  <circle cx="404" cy="270" r="8" fill="#0b1b31"/>
-  <path d="M374 278v24" stroke="#0b1b31" stroke-width="7" stroke-linecap="round"/>
-  <path d="M344 326c22 18 58 18 78 0" fill="none" stroke="#0b1b31" stroke-width="8" stroke-linecap="round"/>
-  <rect x="134" y="424" width="164" height="58" rx="12" fill="#102744"/>
-  <path d="M162 454h104" stroke="#fffaf0" stroke-width="10" stroke-linecap="round"/>
-  <rect x="486" y="430" width="128" height="50" rx="10" fill="#d59f2f"/>
-  <path d="M510 455h78" stroke="#102744" stroke-width="9" stroke-linecap="round"/>
-  <path d="M136 506h920" stroke="#d59f2f" stroke-width="14" stroke-linecap="round"/>
+  <rect x="502" y="96" width="124" height="96" rx="16" fill="#ffe68f" stroke="#0b1b31" stroke-width="7"/>
+  <path d="M532 130h58M532 158h38" stroke="#102744" stroke-width="8" stroke-linecap="round"/>
+  <rect x="660" y="122" width="132" height="100" rx="16" fill="#ffffff" stroke="#0b1b31" stroke-width="7"/>
+  <path d="M694 156h58M694 184h72" stroke="#102744" stroke-width="8" stroke-linecap="round"/>
+  <rect x="828" y="92" width="126" height="94" rx="16" fill="#bdebd6" stroke="#0b1b31" stroke-width="7"/>
+  <circle cx="860" cy="138" r="14" fill="#d59f2f" stroke="#0b1b31" stroke-width="5"/>
+  <path d="M888 128h34M888 154h42" stroke="#102744" stroke-width="8" stroke-linecap="round"/>
+  <path d="M508 238c94 28 226 24 360 0" fill="none" stroke="#d59f2f" stroke-width="9" stroke-linecap="round" stroke-dasharray="1 18"/>
+
+  <path d="M420 420c-42 26-70 76-76 138h286c-6-62-36-112-78-138-36 22-96 22-132 0z" fill="#ffffff" stroke="#0b1b31" stroke-width="9" stroke-linejoin="round"/>
+  <circle cx="488" cy="266" r="84" fill="#f8d9b3" stroke="#0b1b31" stroke-width="9"/>
+  <path d="M414 238c8-60 58-96 120-86 46 7 76 36 88 86-24-16-54-20-86-14-40 8-78 0-122 14z" fill="#1c2b43" stroke="#0b1b31" stroke-width="8"/>
+  <path d="M426 254c-22 0-38 17-38 39s16 39 38 39M550 254c22 0 38 17 38 39s-16 39-38 39" fill="#f8d9b3" stroke="#0b1b31" stroke-width="8"/>
+  <circle cx="456" cy="292" r="8" fill="#0b1b31"/>
+  <circle cx="518" cy="292" r="8" fill="#0b1b31"/>
+  <path d="M488 300v24" stroke="#0b1b31" stroke-width="7" stroke-linecap="round"/>
+  <path d="M456 344c24 18 60 18 84 0" fill="none" stroke="#0b1b31" stroke-width="7" stroke-linecap="round"/>
+  <path d="M344 558c8-54 30-98 72-132M632 558c-8-54-30-98-72-132" fill="none" stroke="#0b1b31" stroke-width="9" stroke-linecap="round"/>
+  <path d="M382 458c36 22 80 34 132 36" fill="none" stroke="#0b1b31" stroke-width="9" stroke-linecap="round"/>
+  <path d="M586 456c-20 34-48 54-86 66" fill="none" stroke="#0b1b31" stroke-width="9" stroke-linecap="round"/>
+  <rect x="648" y="420" width="320" height="144" rx="18" fill="#fffaf0" stroke="#0b1b31" stroke-width="8"/>
+  <path d="M690 458h92M690 494h190M690 530h130" stroke="#102744" stroke-width="8" stroke-linecap="round"/>
+  <rect x="834" y="444" width="92" height="42" rx="12" fill="#ffe68f" stroke="#0b1b31" stroke-width="6"/>
+  <circle cx="880" cy="465" r="9" fill="#d59f2f"/>
+  <path d="M548 508l88-66" stroke="#0b1b31" stroke-width="8" stroke-linecap="round"/>
+  <path d="M536 518l30-22 12 18-30 22z" fill="#d59f2f" stroke="#0b1b31" stroke-width="6"/>
+
+  <rect x="104" y="462" width="88" height="62" rx="12" fill="#ffffff" stroke="#0b1b31" stroke-width="7"/>
+  <path d="M126 488h44M126 510h30" stroke="#102744" stroke-width="7" stroke-linecap="round"/>
+  <rect x="224" y="488" width="96" height="54" rx="12" fill="#ffe68f" stroke="#0b1b31" stroke-width="7"/>
+  <path d="M246 516h52" stroke="#102744" stroke-width="7" stroke-linecap="round"/>
+  <rect x="1000" y="430" width="82" height="114" rx="18" fill="#102744" stroke="#0b1b31" stroke-width="7"/>
+  <path d="M1014 462h54M1014 492h38" stroke="#fffaf0" stroke-width="7" stroke-linecap="round"/>
 </svg>
