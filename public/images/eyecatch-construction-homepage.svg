@@ -2,28 +2,27 @@
   <title id="title">1人親方のホームページ作成</title>
   <desc id="desc">職人が工具とパソコンの前で仕事用ホームページを考えている手描き風イラスト</desc>
   <rect width="1200" height="630" fill="#102744"/>
-  <rect x="80" y="74" width="1040" height="482" rx="22" fill="#f8f1e3"/>
-  <path d="M122 512h956" stroke="#d59f2f" stroke-width="14" stroke-linecap="round"/>
-  <rect x="650" y="138" width="334" height="230" rx="18" fill="#102744" stroke="#0b1b31" stroke-width="10"/>
-  <rect x="684" y="174" width="266" height="160" rx="12" fill="#fffaf0"/>
-  <path d="M720 218h112M720 260h190M720 302h134" stroke="#102744" stroke-width="12" stroke-linecap="round"/>
-  <path d="M868 226l-38 38 38 38M910 226l38 38-38 38" fill="none" stroke="#d59f2f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="758" y="380" width="122" height="22" rx="8" fill="#102744"/>
-  <circle cx="336" cy="244" r="86" fill="#f8d9b3" stroke="#0b1b31" stroke-width="10"/>
-  <path d="M260 218c20-76 138-93 174-14 22-22 50-5 42 26-8 31-40 35-53 18-33 48-111 44-143-2-26 12-47-6-39-28 4-13 12-20 19-20z" fill="#24344d" stroke="#0b1b31" stroke-width="8" stroke-linejoin="round"/>
-  <path d="M308 254h2M370 254h2" stroke="#0b1b31" stroke-width="13" stroke-linecap="round"/>
-  <path d="M324 298c26 18 54 15 78-4" fill="none" stroke="#0b1b31" stroke-width="8" stroke-linecap="round"/>
-  <path d="M230 492c12-116 58-168 120-168 76 0 124 62 138 168z" fill="#ffffff" stroke="#0b1b31" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M266 404h150" stroke="#d59f2f" stroke-width="18" stroke-linecap="round"/>
-  <rect x="166" y="410" width="148" height="50" rx="10" fill="#102744"/>
-  <path d="M190 433h80" stroke="#fffaf0" stroke-width="10" stroke-linecap="round"/>
-  <rect x="464" y="418" width="116" height="42" rx="8" fill="#d59f2f"/>
-  <path d="M486 439h70" stroke="#102744" stroke-width="9" stroke-linecap="round"/>
-  <path d="M132 496h456" stroke="#0b1b31" stroke-width="10" stroke-linecap="round"/>
-  <path d="M118 434l68-68M166 448l68-68" stroke="#d59f2f" stroke-width="14" stroke-linecap="round"/>
+  <rect x="92" y="82" width="1016" height="466" rx="28" fill="#f8f1e3"/>
+  <path d="M144 496h912" stroke="#d59f2f" stroke-width="14" stroke-linecap="round"/>
+  <rect x="650" y="136" width="334" height="230" rx="18" fill="#102744" stroke="#0b1b31" stroke-width="10"/>
+  <rect x="684" y="172" width="266" height="160" rx="12" fill="#fffaf0"/>
+  <path d="M720 216h112M720 258h190M720 300h134" stroke="#102744" stroke-width="12" stroke-linecap="round"/>
+  <path d="M868 224l-38 38 38 38M910 224l38 38-38 38" fill="none" stroke="#d59f2f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="758" y="378" width="122" height="22" rx="8" fill="#102744"/>
+  <circle cx="350" cy="244" r="84" fill="#f8d9b3" stroke="#0b1b31" stroke-width="10"/>
+  <path d="M288 184c30-48 120-54 156 0 24 4 40 24 36 50-4 32-34 48-62 38-38 28-98 26-134-5-30 8-54-10-52-40 2-24 22-42 56-43z" fill="#24344d" stroke="#0b1b31" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M320 254h2M382 254h2" stroke="#0b1b31" stroke-width="13" stroke-linecap="round"/>
+  <path d="M334 302c26 18 56 18 84 0" fill="none" stroke="#0b1b31" stroke-width="8" stroke-linecap="round"/>
+  <path d="M246 486c12-112 58-164 122-164 78 0 126 60 140 164z" fill="#ffffff" stroke="#0b1b31" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M282 400h150" stroke="#d59f2f" stroke-width="18" stroke-linecap="round"/>
+  <rect x="170" y="410" width="150" height="50" rx="10" fill="#102744"/>
+  <path d="M194 433h80" stroke="#fffaf0" stroke-width="10" stroke-linecap="round"/>
+  <rect x="480" y="418" width="116" height="42" rx="8" fill="#d59f2f"/>
+  <path d="M502 439h70" stroke="#102744" stroke-width="9" stroke-linecap="round"/>
+  <path d="M138 486h476" stroke="#0b1b31" stroke-width="10" stroke-linecap="round"/>
+  <path d="M132 434l68-68M180 448l68-68" stroke="#d59f2f" stroke-width="14" stroke-linecap="round"/>
   <rect x="954" y="120" width="106" height="80" rx="18" fill="#f7dda0" stroke="#0b1b31" stroke-width="8"/>
   <path d="M1007 142v36M988 160h38" stroke="#102744" stroke-width="9" stroke-linecap="round"/>
   <circle cx="1024" cy="406" r="42" fill="#d59f2f" stroke="#0b1b31" stroke-width="8"/>
   <path d="M1002 406h44M1024 384v44" stroke="#102744" stroke-width="8" stroke-linecap="round"/>
-  <text x="600" y="570" text-anchor="middle" font-family="Arial, 'Yu Gothic', sans-serif" font-size="44" font-weight="700" fill="#102744">ホームページは忙しい時ほど備えておく</text>
 </svg>
