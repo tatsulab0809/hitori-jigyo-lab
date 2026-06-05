@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { articles } from "../../data/articles.js";
+---
+
+<BaseLayout title="記事一覧 | ひとり事業ラボ" description="ひとり事業ラボの記事一覧です。">
+  <section class="page-heading">
+    <p class="eyebrow">Articles</p>
+    <h1>記事一覧</h1>
+    <p>本業を持ちながら小さな事業アイデアを形にするための実験ログ、ツール活用、事業設計をまとめます。</p>
+  </section>
+  <section class="article-index">
+    <div class="article-index-grid">
+      {articles.map((article) => (
+        <a class="index-card" href={article.href}>
+          <img src={article.image} alt="" />
+          <div>
+            <p class="card-meta">{article.category} / {article.date}</p>
+            <h2>{article.title}</h2>
+            <p>{article.description}</p>
+            <span>READ MORE</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,110 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const latestArticles = [
+  {
+    title: "ひとり事業ラボとは",
+    label: "まず読む",
+    description: "このサイトで試すこと、TATSUが記録すること、読者に届けたいことをまとめます。",
+    href: "/articles/about-hitori-jigyo-lab/",
+    image: "/images/card-about.svg"
+  },
+  {
+    title: "本業を持ちながら小さな事業を育てる全体設計",
+    label: "設計",
+    description: "本業を軸にしながら、ツールを使って小さなアイデアを形にする考え方を整理します。",
+    href: "/articles/monthly-50000-roadmap/",
+    image: "/images/card-roadmap.svg"
+  },
+  {
+    title: "Codexで事業実験サイトを作る手順",
+    label: "実験",
+    description: "Astro、GitHub、Cloudflare Pagesを使って事業ログの拠点を立ち上げる過程を記録します。",
+    href: "/articles/build-affiliate-site-with-codex/",
+    image: "/images/card-codex.svg"
+  }
+];
+---
+
+<BaseLayout>
+  <section class="intro">
+    <p class="eyebrow">Small Business Lab</p>
+    <h1>ひとりで小さく事業をつくる実験記録</h1>
+    <p>
+      本業を大切にしながら、限られた時間の中でAIツールや便利なWebサービスを使い、
+      小さな事業アイデアを形にできるかを実験します。
+    </p>
+  </section>
+
+  <section class="featured-grid" aria-label="Featured articles">
+    {latestArticles.map((article) => (
+      <a class="feature-card" href={article.href}>
+        <div class={`feature-visual ${article.label === "設計" ? "gold" : article.label === "実験" ? "navy" : ""}`}>
+          <img src={article.image} alt="" />
+        </div>
+        <div class="feature-body">
+          <p>{article.label}</p>
+          <h2>{article.title}</h2>
+          <span class="read-more">READ MORE</span>
+        </div>
+      </a>
+    ))}
+  </section>
+
+  <section class="content-layout">
+    <div>
+      <article class="latest-post">
+        <p class="post-date">2026/06/04</p>
+        <h2>Codexで事業実験サイトを作り、公開まで進める</h2>
+        <p class="post-category">副業実験ログ</p>
+        <div class="post-image">
+          <span>BUILD LOG</span>
+        </div>
+      <p>
+          本業とは別に小さなアイデアを試すための拠点を作り、手順と判断をそのまま記録します。
+          WordPressではなくAstroを選び、GitHubとCloudflare Pagesで公開するまでをまとめます。
+      </p>
+        <a class="button primary" href="/articles/build-affiliate-site-with-codex/">この記事を読む</a>
+      </article>
+
+      <section class="article-list">
+        <div class="section-title">
+          <h2>新着記事</h2>
+        </div>
+        {latestArticles.map((article) => (
+          <a class="list-card" href={article.href}>
+            <div class={`list-thumb ${article.label === "設計" ? "gold" : article.label === "実験" ? "navy" : ""}`}>
+              <img src={article.image} alt="" />
+            </div>
+            <div>
+              <p>{article.label}</p>
+              <h3>{article.title}</h3>
+              <span>この記事を読む</span>
+            </div>
+          </a>
+        ))}
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <section class="profile-box">
+        <img class="profile-photo" src="/images/tatsu-profile.png" alt="TATSUのプロフィール写真" />
+        <h2>TATSU</h2>
+        <p>福岡県在住。17年間、外壁塗装の現場と事業運営に向き合ってきた昭和生まれの事業主です。</p>
+        <p>事業主にとって時間は宝。現場で培った判断力と実務感覚をもとに、AIやWebツールを使って小さな事業を育てる方法を実験しています。</p>
+        <a href="/operator/">プロフィール詳細</a>
+      </section>
+
+      <section class="side-box">
+        <h2>カテゴリ</h2>
+        <div class="side-links">
+          <a href="/categories/ai-tools/">AIとツール活用</a>
+          <a href="/categories/experiment-log/">副業実験ログ</a>
+          <a href="/categories/solo-business-tools/">ひとり事業ツール</a>
+          <a href="/categories/roadmap/">小さな事業設計</a>
+          <a href="/categories/workspace/">作業環境</a>
+        </div>
+      </section>
+    </aside>
+  </section>
+</BaseLayout>

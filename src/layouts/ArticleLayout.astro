@@ -1,0 +1,43 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { title, description, category, date, heroImage, heroImageAlt } = Astro.props;
+---
+
+<BaseLayout title={`${title} | ひとり事業ラボ`} description={description}>
+  <div class="article-shell">
+    <article class="article-page">
+      <header class="article-header">
+        <p class="eyebrow">{category}</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <time datetime={date}>公開日: {date}</time>
+      </header>
+      {heroImage && (
+        <figure class="article-eyecatch">
+          <img src={heroImage} alt={heroImageAlt ?? ""} />
+        </figure>
+      )}
+      <div class="article-body">
+        <slot />
+      </div>
+    </article>
+    <aside class="article-sidebar">
+      <section class="profile-box compact-profile">
+        <img class="profile-photo" src="/images/tatsu-profile.png" alt="TATSUのプロフィール写真" />
+        <h2>TATSU</h2>
+        <p>福岡県在住。17年間、外壁塗装の現場と事業運営に向き合ってきた事業主です。</p>
+        <a href="/operator/">プロフィール詳細</a>
+      </section>
+      <section class="side-box">
+        <h2>カテゴリ</h2>
+        <div class="side-links">
+          <a href="/categories/ai-tools/">AIとツール活用</a>
+          <a href="/categories/experiment-log/">副業実験ログ</a>
+          <a href="/categories/solo-business-tools/">ひとり事業ツール</a>
+          <a href="/categories/roadmap/">小さな事業設計</a>
+        </div>
+      </section>
+    </aside>
+  </div>
+</BaseLayout>

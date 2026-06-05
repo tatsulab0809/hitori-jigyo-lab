@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="小さな事業設計のシンプルアイキャッチ">
+  <rect width="1200" height="700" fill="#10233f"/>
+  <path d="M160 505c120-90 215-82 300 0s190 78 315-20 205-92 280 18" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="165" cy="505" r="42" fill="#d49b34" stroke="#071426" stroke-width="12"/>
+  <circle cx="455" cy="505" r="42" fill="#ffffff" stroke="#071426" stroke-width="12"/>
+  <circle cx="775" cy="485" r="42" fill="#f6e3ac" stroke="#071426" stroke-width="12"/>
+  <circle cx="1055" cy="503" r="42" fill="#d49b34" stroke="#071426" stroke-width="12"/>
+  <path d="M1040 503h30M1055 488v30" stroke="#d49b34" stroke-width="8" stroke-linecap="round"/>
+  <rect x="205" y="160" width="250" height="210" rx="24" fill="#ffffff" stroke="#071426" stroke-width="14"/>
+  <path d="M250 225h150M250 285h115M250 330h150" stroke="#071426" stroke-width="12" stroke-linecap="round"/>
+  <path d="M620 185l55 70 105-125" fill="none" stroke="#d49b34" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="850" y="165" width="150" height="150" rx="26" fill="#f6e3ac" stroke="#071426" stroke-width="14"/>
+  <path d="M895 240h60M925 210v60" stroke="#10233f" stroke-width="12" stroke-linecap="round"/>
+</svg>

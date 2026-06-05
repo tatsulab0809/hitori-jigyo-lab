@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { categories } from "../../data/articles.js";
+---
+
+<BaseLayout title="カテゴリ | ひとり事業ラボ" description="ひとり事業ラボのカテゴリ一覧です。">
+  <section class="page-heading">
+    <p class="eyebrow">Categories</p>
+    <h1>カテゴリ</h1>
+    <p>実験ログ、AIとツール活用、ロードマップ、作業環境などのテーマ別に整理します。</p>
+  </section>
+  <section class="section compact">
+    <div class="article-grid">
+      {categories.map((category) => (
+        <a class="article-card" href={category.href}>
+          <h2>{category.title}</h2>
+          <p>{category.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
