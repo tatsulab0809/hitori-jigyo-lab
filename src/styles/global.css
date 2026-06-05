@@ -589,6 +589,18 @@ h3 {
   padding-left: 1.4em;
 }
 
+.article-inline-image {
+  margin: 34px 0;
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.article-inline-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .note-box {
   margin-top: 42px;
   padding: 24px;

@@ -1,5 +1,13 @@
 export const articles = [
   {
+    title: "建設業の1人親方がホームページに載せるべき内容",
+    description: "仕事が回っている時ほど後回しにしがちなホームページについて、1人親方目線で載せるべき内容と作り方を整理します。",
+    href: "/articles/construction-one-man-homepage-content/",
+    category: "小さな事業設計",
+    date: "2026-06-05",
+    image: "/images/eyecatch-construction-homepage.svg"
+  },
+  {
     title: "デジタルが得意ではない職人事業主の最初の一歩",
     description: "ホームページやAIツールに苦手意識がある職人事業主が、まず何から始めればよいかを実体験から整理します。",
     href: "/articles/craftsman-digital-first-step/",
