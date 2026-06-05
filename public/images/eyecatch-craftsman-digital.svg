@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">職人事業主のデジタル最初の一歩</title>
+  <desc id="desc">刷毛とパソコンを組み合わせたネイビー調の手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#102744"/>
+  <rect x="520" y="150" width="420" height="280" rx="28" fill="#f8f5ec" stroke="#d39f31" stroke-width="12"/>
+  <rect x="600" y="465" width="260" height="40" rx="14" fill="#d39f31"/>
+  <path d="M590 245 h280 M590 325 h190" stroke="#102744" stroke-width="20" stroke-linecap="round"/>
+  <path d="M250 150 l170 170 l-70 70 l-170 -170z" fill="#f8f5ec" stroke="#d39f31" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M160 260 l140 140" stroke="#d39f31" stroke-width="34" stroke-linecap="round"/>
+</svg>

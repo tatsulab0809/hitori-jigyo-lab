@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">ひとり事業主の道具リスト</title>
+  <desc id="desc">ドメイン、サーバー、会計、AIの道具を並べたネイビー調の手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#102744"/>
+  <rect x="145" y="150" width="190" height="190" rx="26" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
+  <rect x="385" y="150" width="190" height="190" rx="26" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
+  <rect x="625" y="150" width="190" height="190" rx="26" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
+  <rect x="865" y="150" width="190" height="190" rx="26" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
+  <text x="240" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#102744">DNS</text>
+  <text x="480" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#102744">WEB</text>
+  <text x="720" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#102744">¥</text>
+  <text x="960" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#102744">AI</text>
+  <path d="M220 455 h760" stroke="#d39f31" stroke-width="22" stroke-linecap="round"/>
+</svg>

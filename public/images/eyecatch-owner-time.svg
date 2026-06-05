@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">事業主の時間</title>
+  <desc id="desc">時計と工具、書類を組み合わせたネイビー調の手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#102744"/>
+  <circle cx="600" cy="350" r="190" fill="#f8f5ec" stroke="#d39f31" stroke-width="16"/>
+  <path d="M600 230 v135 l95 70" stroke="#102744" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M210 500 h210" stroke="#d39f31" stroke-width="22" stroke-linecap="round"/>
+  <path d="M780 180 h180 M780 250 h130 M780 320 h170" stroke="#f8f5ec" stroke-width="20" stroke-linecap="round"/>
+  <rect x="140" y="160" width="210" height="230" rx="20" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
+  <path d="M190 230 h110 M190 290 h85" stroke="#102744" stroke-width="16" stroke-linecap="round"/>
+</svg>

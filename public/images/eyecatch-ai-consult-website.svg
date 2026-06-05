@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">AIにホームページ相談</title>
+  <desc id="desc">吹き出しとホームページ画面を描いたネイビー調の手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#102744"/>
+  <rect x="130" y="150" width="420" height="310" rx="28" fill="#f8f5ec" stroke="#d39f31" stroke-width="12"/>
+  <path d="M190 240 h300 M190 320 h230 M190 400 h160" stroke="#102744" stroke-width="20" stroke-linecap="round"/>
+  <path d="M680 170 h300 a50 50 0 0 1 50 50 v150 a50 50 0 0 1 -50 50 h-120 l-80 80 v-80 h-100 a50 50 0 0 1 -50 -50 v-150 a50 50 0 0 1 50 -50z" fill="#f8f5ec" stroke="#d39f31" stroke-width="12"/>
+  <text x="830" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="82" font-weight="700" fill="#102744">AI?</text>
+</svg>

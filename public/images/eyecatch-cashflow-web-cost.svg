@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Web費用を小さく始める</title>
+  <desc id="desc">財布と小さなホームページを描いたネイビー調の手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#102744"/>
+  <rect x="130" y="250" width="370" height="240" rx="40" fill="#f8f5ec" stroke="#d39f31" stroke-width="14"/>
+  <circle cx="430" cy="370" r="34" fill="#d39f31"/>
+  <rect x="650" y="150" width="360" height="330" rx="28" fill="#f8f5ec" stroke="#d39f31" stroke-width="12"/>
+  <rect x="705" y="220" width="250" height="150" rx="12" fill="#102744"/>
+  <path d="M735 420 h190" stroke="#102744" stroke-width="18" stroke-linecap="round"/>
+  <text x="315" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#102744">0?</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">本業と副業をAIで進める</title>
+  <desc id="desc">本業と副業の二つの道をAIがつなぐネイビー調の手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#102744"/>
+  <path d="M180 520 C360 260 430 260 590 520" fill="none" stroke="#f8f5ec" stroke-width="26" stroke-linecap="round"/>
+  <path d="M610 520 C770 260 840 260 1020 520" fill="none" stroke="#d39f31" stroke-width="26" stroke-linecap="round"/>
+  <rect x="210" y="170" width="260" height="140" rx="26" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
+  <rect x="730" y="170" width="260" height="140" rx="26" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
+  <text x="340" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#102744">本業</text>
+  <text x="860" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#102744">副業</text>
+</svg>

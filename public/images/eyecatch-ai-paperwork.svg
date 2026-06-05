@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">AIで書類作成を短縮</title>
+  <desc id="desc">書類の山がAIツールで小さくなる様子を描いたネイビー調の手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#102744"/>
+  <rect x="120" y="145" width="280" height="390" rx="18" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
+  <rect x="175" y="110" width="280" height="390" rx="18" fill="#f8f5ec" stroke="#102744" stroke-width="10"/>
+  <rect x="230" y="80" width="280" height="390" rx="18" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
+  <path d="M290 190 h160 M290 260 h120 M290 330 h150" stroke="#102744" stroke-width="18" stroke-linecap="round"/>
+  <rect x="700" y="180" width="300" height="260" rx="34" fill="#f8f5ec" stroke="#d39f31" stroke-width="12"/>
+  <text x="850" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="96" font-weight="700" fill="#102744">AI</text>
+  <path d="M570 330 C620 270 650 270 690 310" fill="none" stroke="#d39f31" stroke-width="18" stroke-linecap="round"/>
+</svg>

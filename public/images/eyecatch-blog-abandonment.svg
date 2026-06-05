@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">ブログ放置の反省</title>
+  <desc id="desc">止まったブログ画面と積まれたメモを描いたネイビー調の手描き風アイキャッチ</desc>
+  <rect width="1200" height="700" fill="#102744"/>
+  <rect x="150" y="130" width="520" height="360" rx="30" fill="#f8f5ec" stroke="#d39f31" stroke-width="14"/>
+  <path d="M210 235 h380 M210 315 h300 M210 395 h180" stroke="#102744" stroke-width="20" stroke-linecap="round"/>
+  <path d="M810 220 l150 150 M960 220 l-150 150" stroke="#d39f31" stroke-width="28" stroke-linecap="round"/>
+  <rect x="760" y="430" width="260" height="90" rx="16" fill="#f8f5ec" stroke="#d39f31" stroke-width="10"/>
+</svg>

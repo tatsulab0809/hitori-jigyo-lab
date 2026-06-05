@@ -1,5 +1,85 @@
 export const articles = [
   {
+    title: "デジタルが得意ではない職人事業主の最初の一歩",
+    description: "ホームページやAIツールに苦手意識がある職人事業主が、まず何から始めればよいかを実体験から整理します。",
+    href: "/articles/craftsman-digital-first-step/",
+    category: "小さな事業設計",
+    date: "2026-06-05",
+    image: "/images/eyecatch-craftsman-digital.svg"
+  },
+  {
+    title: "本業が忙しい人でも副業を形にできるのか",
+    description: "本業で体力も精神力も使う事業主が、AIを使って副業や別事業を現実的に進められるかを考えます。",
+    href: "/articles/side-business-with-ai-reality/",
+    category: "小さな事業設計",
+    date: "2026-06-05",
+    image: "/images/eyecatch-side-business-ai.svg"
+  },
+  {
+    title: "ひとり事業主がまず整えたい道具リスト",
+    description: "ホームページ、ドメイン、サーバー、会計、AIツールなど、ひとり事業主が最初に整えたい道具を整理します。",
+    href: "/articles/solo-owner-tool-stack/",
+    category: "ひとり事業ツール",
+    date: "2026-06-05",
+    image: "/images/eyecatch-owner-tool-stack.svg"
+  },
+  {
+    title: "見積もりと報告書に追われる事業主こそテンプレ化したい",
+    description: "見積もりや報告書の作成に時間を取られる事業主が、テンプレートとAIで雑務を減らす考え方をまとめます。",
+    href: "/articles/quote-report-ai-template/",
+    category: "AIとツール活用",
+    date: "2026-06-05",
+    image: "/images/eyecatch-quote-report-template.svg"
+  },
+  {
+    title: "別ジャンルのブログを作りかけて放置した僕が学んだこと",
+    description: "過去にブログを作りかけて続かなかった経験から、本業が忙しい事業主が発信を続けるために必要なことを考えます。",
+    href: "/articles/blog-abandonment-lesson/",
+    category: "副業実験ログ",
+    date: "2026-06-05",
+    image: "/images/eyecatch-blog-abandonment.svg"
+  },
+  {
+    title: "ホームページやネット集客をAIに相談できる時代になった",
+    description: "相談相手がいなくて止まりがちなホームページ作成やネット集客を、AIと一緒に進める考え方をまとめます。",
+    href: "/articles/consult-ai-for-website/",
+    category: "AIとツール活用",
+    date: "2026-06-05",
+    image: "/images/eyecatch-ai-consult-website.svg"
+  },
+  {
+    title: "資金繰りが厳しい事業主ほどWeb費用を小さく始めたい",
+    description: "入金タイミングが遅い現場仕事の事業主目線で、ホームページやブログを低コストで始める意味を考えます。",
+    href: "/articles/cashflow-small-web-cost/",
+    category: "小さな事業設計",
+    date: "2026-06-05",
+    image: "/images/eyecatch-cashflow-web-cost.svg"
+  },
+  {
+    title: "事業主にとって時間が宝だと痛感した話",
+    description: "現場、見積もり、事務処理に追われる個人事業主ほど、道具で時間を守る必要があると感じた話です。",
+    href: "/articles/tools-save-owner-time/",
+    category: "小さな事業設計",
+    date: "2026-06-05",
+    image: "/images/eyecatch-owner-time.svg"
+  },
+  {
+    title: "見積もり・報告書作成をAIで短縮できるか",
+    description: "見積もり、報告書、書類作成に追われる事業主が、AIを使うことでどこまで時間を減らせるかを考えます。",
+    href: "/articles/ai-paperwork-shortening/",
+    category: "AIとツール活用",
+    date: "2026-06-05",
+    image: "/images/eyecatch-ai-paperwork.svg"
+  },
+  {
+    title: "個人事業主がホームページを自作する前に決めること",
+    description: "外壁塗装の事業主として感じてきた、ホームページ作成前に決めておきたい目的、更新方法、費用感を整理します。",
+    href: "/articles/website-before-decide/",
+    category: "小さな事業設計",
+    date: "2026-06-05",
+    image: "/images/eyecatch-owner-website-decide.svg"
+  },
+  {
     title: "AI画像生成でブログのアイキャッチを作るとどこまで使えるか",
     description: "ひとり事業ラボで記事画像を作りながら感じた、AI画像生成の便利さと注意点をまとめます。",
     href: "/articles/ai-eyecatch-image-test/",
