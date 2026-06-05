@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
+  <rect width="1200" height="675" fill="#102745"/>
+  <rect x="88" y="72" width="1024" height="530" rx="34" fill="#f8f1e4"/>
+  <rect x="185" y="166" width="270" height="310" rx="24" fill="#fff" stroke="#102745" stroke-width="14"/>
+  <path d="M244 238h152M244 302h152M244 366h152" stroke="#102745" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="320" cy="477" r="28" fill="#d9a735" stroke="#102745" stroke-width="10"/>
+  <path d="M535 328c52-66 116-66 190 0s136 66 188 0" fill="none" stroke="#d9a735" stroke-width="18" stroke-linecap="round"/>
+  <rect x="768" y="190" width="246" height="204" rx="32" fill="#102745"/>
+  <rect x="812" y="242" width="158" height="26" rx="10" fill="#fff"/>
+  <rect x="812" y="299" width="108" height="26" rx="10" fill="#d9a735"/>
+  <text x="600" y="553" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="38" fill="#102745">SERVER?</text>
+</svg>

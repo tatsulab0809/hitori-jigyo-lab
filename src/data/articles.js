@@ -1,5 +1,53 @@
 export const articles = [
   {
+    title: "AI画像生成でブログのアイキャッチを作るとどこまで使えるか",
+    description: "ひとり事業ラボで記事画像を作りながら感じた、AI画像生成の便利さと注意点をまとめます。",
+    href: "/articles/ai-eyecatch-image-test/",
+    category: "AIとツール活用",
+    date: "2026-06-05",
+    image: "/images/eyecatch-ai-image.svg"
+  },
+  {
+    title: "AI文字起こしツールは事業主の打ち合わせメモに使えるか",
+    description: "打ち合わせ、電話、現場メモを記録する道具として、AI文字起こしツールをどう使えそうか整理します。",
+    href: "/articles/ai-transcription-for-owner/",
+    category: "AIとツール活用",
+    date: "2026-06-05",
+    image: "/images/eyecatch-ai-transcription.svg"
+  },
+  {
+    title: "弥生会計を使っている事業主が、会計ソフト選びで大事だと思うこと",
+    description: "17年間事業を続けてきた中で感じる、個人事業主にとっての会計ソフトの役割を整理します。",
+    href: "/articles/yayoi-accounting-owner-review/",
+    category: "ひとり事業ツール",
+    date: "2026-06-05",
+    image: "/images/eyecatch-yayoi-accounting.svg"
+  },
+  {
+    title: "個人事業主がホームページを自作するなら、サーバーは必要なのか",
+    description: "Cloudflare Pagesでサイトを公開してみて、レンタルサーバーが必要なケースと不要なケースを整理します。",
+    href: "/articles/do-you-need-rental-server/",
+    category: "ひとり事業ツール",
+    date: "2026-06-05",
+    image: "/images/eyecatch-server-needed.svg"
+  },
+  {
+    title: "WordPressとAstro、事業主のHP作成にはどちらが向いているか",
+    description: "ロリポップでWordPressを触った経験と、今回Astroでサイトを作った経験から、事業主目線で違いを整理します。",
+    href: "/articles/wordpress-vs-astro/",
+    category: "ひとり事業ツール",
+    date: "2026-06-05",
+    image: "/images/eyecatch-wordpress-astro.svg"
+  },
+  {
+    title: "Xserverドメインで独自ドメインを取得した手順",
+    description: "ひとり事業ラボで実際に独自ドメインを取得し、Cloudflareにつなぐまでにやったことを事業主目線で整理します。",
+    href: "/articles/xserver-domain-setup/",
+    category: "副業実験ログ",
+    date: "2026-06-05",
+    image: "/images/eyecatch-xserver-domain.svg"
+  },
+  {
     title: "Codexと一緒にサイト公開まで進めた記録",
     description: "デジタルが得意ではない事業主が、Codexに相談しながらAstroサイトを作り、独自ドメインで公開するまでの実験ログです。",
     href: "/articles/codex-site-launch-record/",

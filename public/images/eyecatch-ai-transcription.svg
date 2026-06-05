@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
+  <rect width="1200" height="675" fill="#102745"/>
+  <rect x="80" y="72" width="1040" height="530" rx="34" fill="#f8f1e4"/>
+  <rect x="176" y="156" width="258" height="350" rx="112" fill="#fff" stroke="#102745" stroke-width="16"/>
+  <rect x="268" y="212" width="74" height="164" rx="36" fill="#d9a735" stroke="#102745" stroke-width="12"/>
+  <path d="M226 374c24 58 134 58 158 0M305 430v58M254 488h102" fill="none" stroke="#102745" stroke-width="14" stroke-linecap="round"/>
+  <rect x="552" y="166" width="454" height="318" rx="28" fill="#fff" stroke="#102745" stroke-width="14"/>
+  <rect x="610" y="228" width="260" height="22" rx="9" fill="#102745"/>
+  <rect x="610" y="286" width="320" height="22" rx="9" fill="#d9a735"/>
+  <rect x="610" y="344" width="220" height="22" rx="9" fill="#102745"/>
+  <text x="600" y="562" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="38" fill="#102745">VOICE TO TEXT</text>
+</svg>

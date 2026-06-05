@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { articles } from "../data/articles.js";
 
-const latestArticles = [
+const featuredArticles = [
   {
     title: "ひとり事業ラボとは",
     label: "まず読む",
@@ -24,6 +25,8 @@ const latestArticles = [
     image: "/images/card-codex.svg"
   }
 ];
+
+const recentArticles = articles.slice(0, 3);
 ---
 
 <BaseLayout>
@@ -37,7 +40,7 @@ const latestArticles = [
   </section>
 
   <section class="featured-grid" aria-label="Featured articles">
-    {latestArticles.map((article) => (
+    {featuredArticles.map((article) => (
       <a class="feature-card" href={article.href}>
         <div class={`feature-visual ${article.label === "設計" ? "gold" : article.label === "実験" ? "navy" : ""}`}>
           <img src={article.image} alt="" />
@@ -71,13 +74,13 @@ const latestArticles = [
         <div class="section-title">
           <h2>新着記事</h2>
         </div>
-        {latestArticles.map((article) => (
+        {recentArticles.map((article) => (
           <a class="list-card" href={article.href}>
-            <div class={`list-thumb ${article.label === "設計" ? "gold" : article.label === "実験" ? "navy" : ""}`}>
+            <div class="list-thumb navy">
               <img src={article.image} alt="" />
             </div>
             <div>
-              <p>{article.label}</p>
+              <p>{article.category}</p>
               <h3>{article.title}</h3>
               <span>この記事を読む</span>
             </div>

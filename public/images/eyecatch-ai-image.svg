@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
+  <rect width="1200" height="675" fill="#102745"/>
+  <rect x="84" y="70" width="1032" height="535" rx="34" fill="#f8f1e4"/>
+  <rect x="166" y="144" width="518" height="350" rx="28" fill="#fff" stroke="#102745" stroke-width="14"/>
+  <circle cx="292" cy="252" r="52" fill="#d9a735" stroke="#102745" stroke-width="12"/>
+  <path d="M210 431l148-145 102 98 72-66 96 113" fill="none" stroke="#102745" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="760" y="176" width="260" height="260" rx="34" fill="#102745"/>
+  <path d="M820 302h140M890 232v140" stroke="#d9a735" stroke-width="18" stroke-linecap="round"/>
+  <path d="M790 472c54 32 146 32 200 0" fill="none" stroke="#d9a735" stroke-width="16" stroke-linecap="round"/>
+  <text x="600" y="562" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="38" fill="#102745">AI EYECATCH</text>
+</svg>

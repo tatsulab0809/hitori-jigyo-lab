@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
+  <rect width="1200" height="675" fill="#102745"/>
+  <rect x="82" y="72" width="1036" height="530" rx="32" fill="#f8f1e4"/>
+  <rect x="154" y="150" width="360" height="330" rx="30" fill="#fff" stroke="#102745" stroke-width="14"/>
+  <rect x="686" y="150" width="360" height="330" rx="30" fill="#fff" stroke="#102745" stroke-width="14"/>
+  <text x="334" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="58" fill="#102745">WP</text>
+  <text x="866" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="58" fill="#d9a735">ASTRO</text>
+  <path d="M262 354h144M262 398h144" stroke="#102745" stroke-width="18" stroke-linecap="round"/>
+  <path d="M789 349l54 54 101-126" fill="none" stroke="#d9a735" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M550 310h100M624 260l50 50-50 50" fill="none" stroke="#102745" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="553" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="38" fill="#102745">WordPress or Astro?</text>
+</svg>
