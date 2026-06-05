@@ -9,10 +9,9 @@
   <path d="M720 216h112M720 258h190M720 300h134" stroke="#102744" stroke-width="12" stroke-linecap="round"/>
   <path d="M868 224l-38 38 38 38M910 224l38 38-38 38" fill="none" stroke="#d59f2f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
   <rect x="758" y="378" width="122" height="22" rx="8" fill="#102744"/>
-  <circle cx="350" cy="244" r="84" fill="#f8d9b3" stroke="#0b1b31" stroke-width="10"/>
-  <path d="M288 184c30-48 120-54 156 0 24 4 40 24 36 50-4 32-34 48-62 38-38 28-98 26-134-5-30 8-54-10-52-40 2-24 22-42 56-43z" fill="#24344d" stroke="#0b1b31" stroke-width="9" stroke-linejoin="round"/>
-  <path d="M320 254h2M382 254h2" stroke="#0b1b31" stroke-width="13" stroke-linecap="round"/>
-  <path d="M334 302c26 18 56 18 84 0" fill="none" stroke="#0b1b31" stroke-width="8" stroke-linecap="round"/>
+  <path d="M292 198c30-50 122-58 162 0 28 6 44 28 38 58-6 34-38 52-68 40-38 32-104 32-144 0-30 12-62-6-68-40-5-30 12-52 42-58 8-1 22-1 38 0z" fill="#24344d" stroke="#0b1b31" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M300 282c36 52 112 52 148 0" fill="#f8d9b3" stroke="#0b1b31" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M324 318c28 22 70 22 100 0" fill="none" stroke="#0b1b31" stroke-width="9" stroke-linecap="round"/>
   <path d="M246 486c12-112 58-164 122-164 78 0 126 60 140 164z" fill="#ffffff" stroke="#0b1b31" stroke-width="10" stroke-linejoin="round"/>
   <path d="M282 400h150" stroke="#d59f2f" stroke-width="18" stroke-linecap="round"/>
   <rect x="170" y="410" width="150" height="50" rx="10" fill="#102744"/>
