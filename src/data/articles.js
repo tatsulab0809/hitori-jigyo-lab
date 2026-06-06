@@ -13,7 +13,7 @@ export const articles = [
     href: "/articles/solo-owner-homepage-page-structure/",
     category: "小さな事業設計",
     date: "2026-06-05",
-    image: "/images/eyecatch-homepage-page-structure.svg"
+    image: "/images/eyecatch-solo-owner-homepage-page-structure.png"
   },
   {
     title: "建設業の1人親方がホームページに載せるべき内容",
