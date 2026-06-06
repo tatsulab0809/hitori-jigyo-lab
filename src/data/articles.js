@@ -21,7 +21,7 @@ export const articles = [
     href: "/articles/construction-one-man-homepage-content/",
     category: "小さな事業設計",
     date: "2026-06-05",
-    image: "/images/eyecatch-construction-homepage.svg"
+    image: "/images/eyecatch-construction-homepage-cafe.png"
   },
   {
     title: "デジタルが得意ではない職人事業主の最初の一歩",
