@@ -1,5 +1,13 @@
 export const articles = [
   {
+    title: "個人事業主のホームページ集客で失敗しやすい原因と改善ポイント",
+    description: "作っただけで放置されがちなホームページを、個人事業主が集客の入口として育てるための改善ポイントを整理します。",
+    href: "/articles/homepage-attract-failures/",
+    category: "小さな事業設計",
+    date: "2026-06-06",
+    image: "/images/eyecatch-homepage-attract-failures.png"
+  },
+  {
     title: "個人事業主がホームページに用意したいページ構成",
     description: "サービス内容だけでなく、人となり、料金、よくある不安まで伝えるために、個人事業主のホームページに必要なページを整理します。",
     href: "/articles/solo-owner-homepage-page-structure/",
