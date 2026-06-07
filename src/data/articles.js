@@ -29,7 +29,7 @@ export const articles = [
     href: "/articles/craftsman-digital-first-step/",
     category: "小さな事業設計",
     date: "2026-06-05",
-    image: "/images/eyecatch-craftsman-digital.svg"
+    image: "/images/eyecatch-craftsman-digital-painter.png"
   },
   {
     title: "本業が忙しい人でも副業を形にできるのか",
