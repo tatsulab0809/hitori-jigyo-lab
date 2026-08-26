@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { articles } from "../data/articles.js";
+import { affiliatePrograms } from "../data/affiliate/programs.js";
 
 const featuredArticles = [
   {
@@ -27,6 +28,40 @@ const featuredArticles = [
 ];
 
 const recentArticles = articles.slice(0, 3);
+const starterArticles = articles.filter((article) =>
+  [
+    "/articles/webflow-free-plan-hands-on/",
+    "/articles/kit-newsletter-before-start/",
+    "/articles/beehiiv-japanese-newsletter-test/",
+    "/articles/partnerstack-application-log/",
+    "/articles/impact-declined-learning-plan/"
+  ].includes(article.href)
+);
+
+const toolRoutes = [
+  {
+    title: "Webサイトを作りたい",
+    description: "Webflowを中心に、無料プランで試せること、WordPressやAstroとの違い、公開後の運用まで確認します。",
+    href: "/tools/#website-picks",
+    cta: "Web制作ツールを見る"
+  },
+  {
+    title: "読者リストを育てたい",
+    description: "Kitとbeehiivを、日本語ニュースレター、登録フォーム、配信頻度、料金の目線で比べます。",
+    href: "/tools/#newsletter-picks",
+    cta: "ニュースレターを見る"
+  },
+  {
+    title: "海外ASPに挑戦したい",
+    description: "PartnerStackの申請実録とimpact.com却下の学びから、審査前に整える情報を整理します。",
+    href: "/affiliate-programs/",
+    cta: "申請状況を見る"
+  }
+];
+
+const priorityPrograms = affiliatePrograms.filter((program) =>
+  ["webflow", "kit", "beehiiv"].includes(program.slug)
+);
 ---
 
 <BaseLayout>
@@ -50,6 +85,62 @@ const recentArticles = articles.slice(0, 3);
         </p>
       </div>
       <a class="button primary" href="/overseas-saas/">海外SaaS入門へ</a>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>まず読む5本</h2>
+    </div>
+    <div class="starter-reading-grid">
+      {starterArticles.map((article, index) => (
+        <a class="starter-card" href={article.href}>
+          <img src={article.image} alt="" />
+          <div>
+            <p>{String(index + 1).padStart(2, "0")} / {article.category}</p>
+            <h3>{article.title}</h3>
+            <span>この記事を読む</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="conversion-band">
+      <div>
+        <p class="panel-label">Start Here</p>
+        <h2>迷ったら、目的から道具を選ぶ</h2>
+        <p>
+          ひとり事業の道具選びは、評判よりも「いま何を前に進めたいか」で決めた方が失敗しにくいです。
+          いきなり全部契約すると、翌月のカード明細が小さな会議を開きます。
+        </p>
+      </div>
+      <div class="route-grid">
+        {toolRoutes.map((route) => (
+          <a class="route-card" href={route.href}>
+            <h3>{route.title}</h3>
+            <p>{route.description}</p>
+            <span>{route.cta}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>収益導線の中心ツール</h2>
+    </div>
+    <div class="program-strip">
+      {priorityPrograms.map((program) => (
+        <article class="program-mini-card">
+          <p>{program.category}</p>
+          <h3>{program.name}</h3>
+          <span class={`status-pill ${program.status}`}>{program.status === "to_apply" ? "申請予定" : program.status}</span>
+          <a class="button primary" href={`/go/${program.slug}/`}>公式ページへ</a>
+        </article>
+      ))}
     </div>
   </section>
 

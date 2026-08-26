@@ -1,5 +1,104 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { affiliatePrograms } from "../../data/affiliate/programs.js";
+
+const programBySlug = Object.fromEntries(affiliatePrograms.map((program) => [program.slug, program]));
+
+const websitePicks = [
+  {
+    slug: "webflow",
+    name: "Webflow",
+    role: "見た目と更新性を両立したい人向け",
+    bestFor: "サービス紹介サイト、LP、ポートフォリオ",
+    freePlan: "無料で操作感を確認しやすい",
+    japaneseFit: "日本語表示は扱えるが、管理画面は英語中心",
+    article: "/articles/webflow-free-plan-hands-on/",
+    articleLabel: "無料プラン実験を読む"
+  },
+  {
+    slug: "wordpress",
+    name: "WordPress",
+    role: "検索流入を長く育てたい人向け",
+    bestFor: "ブログ、事例記事、地域ビジネスサイト",
+    freePlan: "サーバー代やテーマ代が別途かかりやすい",
+    japaneseFit: "日本語情報が多く、外注もしやすい",
+    article: "/articles/wordpress-vs-astro/",
+    articleLabel: "Astroとの違いを見る"
+  },
+  {
+    slug: "astro",
+    name: "Astro",
+    role: "軽い静的サイトを自分で育てたい人向け",
+    bestFor: "実験サイト、記事サイト、小さなメディア",
+    freePlan: "GitHubとCloudflare Pagesで小さく始めやすい",
+    japaneseFit: "制作には少し技術理解が必要",
+    article: "/articles/codex-site-launch-record/",
+    articleLabel: "公開実録を読む"
+  }
+];
+
+const newsletterPicks = [
+  {
+    slug: "kit",
+    name: "Kit",
+    role: "少人数の濃い読者リストを育てたい人向け",
+    bestFor: "個人発信、講座、サービス案内、ステップメール",
+    freePlan: "最初の検証に使いやすい",
+    japaneseFit: "英語UI前提。読者向け文章は日本語で組める",
+    article: "/articles/kit-newsletter-before-start/",
+    articleLabel: "始める前の確認を見る"
+  },
+  {
+    slug: "beehiiv",
+    name: "beehiiv",
+    role: "メディア型ニュースレターを育てたい人向け",
+    bestFor: "定期配信、スポンサー導線、読者増加施策",
+    freePlan: "日本語運用は事前確認したい",
+    japaneseFit: "英語UI中心。登録フォームや表示確認が大事",
+    article: "/articles/beehiiv-japanese-newsletter-test/",
+    articleLabel: "日本語運用の確認を見る"
+  },
+  {
+    slug: "substack",
+    name: "Substack",
+    role: "文章中心でまず配信を始めたい人向け",
+    bestFor: "エッセイ、コラム、ゆるい読者コミュニティ",
+    freePlan: "始めやすいが収益導線は別設計が必要",
+    japaneseFit: "日本語投稿は可能。細かな導線設計は弱め",
+    article: "/articles/beehiiv-vs-kit-japanese-solo-business/",
+    articleLabel: "Kit/beehiiv比較を見る"
+  }
+];
+
+const laterPicks = [
+  {
+    slug: "hubspot",
+    name: "HubSpot",
+    timing: "問い合わせ管理が増えてから",
+    note: "無料CRMから入れるので、顧客管理の記事が増えた段階で導線化しやすい。"
+  },
+  {
+    slug: "shopify",
+    name: "Shopify",
+    timing: "商品やデジタル販売の実験後",
+    note: "ECの文脈が必要。いきなり薦めるより、小さな販売実験の記事を作ってから。"
+  },
+  {
+    slug: "semrush",
+    name: "Semrush",
+    timing: "SEO記事が増えてから",
+    note: "高機能だが初心者には重い。検索流入の検証ログとセットで扱う。"
+  }
+];
+
+const getProgram = (slug) => programBySlug[slug];
+
+const statusLabel = {
+  to_apply: "申請予定",
+  submitted: "審査中",
+  declined: "見送り中",
+  approved: "承認済み"
+};
 ---
 
 <BaseLayout
@@ -29,6 +128,125 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         <p>海外SaaSは承認状況や条件が変わりやすいので、記事ごとに直書きせず、紹介プログラム一覧と出口ページで管理します。</p>
       </div>
       <a class="button primary" href="/affiliate-programs/">紹介プログラム一覧</a>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>最初に見るおすすめルート</h2>
+    </div>
+    <div class="tool-route-grid">
+      <a class="tool-route-card" href="#website-picks">
+        <p class="panel-label">Website</p>
+        <h2>ホームページを作る</h2>
+        <p>まずはWebflow、WordPress、Astroのどれで作るか。見た目、更新、費用、自由度を比べます。</p>
+        <span>Web制作ツールへ</span>
+      </a>
+      <a class="tool-route-card" href="#newsletter-picks">
+        <p class="panel-label">Newsletter</p>
+        <h2>読者リストを作る</h2>
+        <p>Kitとbeehiivを中心に、SEOだけに頼らない発信導線を作ります。読者0人からの話です。静かで好きです。</p>
+        <span>発信ツールへ</span>
+      </a>
+      <a class="tool-route-card" href="#later-picks">
+        <p class="panel-label">Later</p>
+        <h2>後で検討する</h2>
+        <p>CRM、EC、SEO専用ツールは強いですが、最初から全部入れると管理画面だけで朝になります。</p>
+        <span>次候補を見る</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="website-picks" class="section compact">
+    <div class="section-title">
+      <h2>Web制作ツール</h2>
+    </div>
+    <div class="comparison-table">
+      {websitePicks.map((tool) => {
+        const program = getProgram(tool.slug);
+        return (
+          <article class="comparison-card">
+            <div class="comparison-head">
+              <div>
+                <p class="panel-label">{tool.bestFor}</p>
+                <h2>{tool.name}</h2>
+              </div>
+              {program && <span class={`status-pill ${program.status}`}>{statusLabel[program.status] ?? program.status}</span>}
+            </div>
+            <p>{tool.role}</p>
+            <dl>
+              <div>
+                <dt>無料確認</dt>
+                <dd>{tool.freePlan}</dd>
+              </div>
+              <div>
+                <dt>日本語運用</dt>
+                <dd>{tool.japaneseFit}</dd>
+              </div>
+            </dl>
+            <div class="button-row">
+              <a class="button" href={tool.article}>{tool.articleLabel}</a>
+              {program && <a class="button primary" href={`/go/${program.slug}/`}>公式ページへ</a>}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section id="newsletter-picks" class="section compact">
+    <div class="section-title">
+      <h2>ニュースレター・発信ツール</h2>
+    </div>
+    <div class="comparison-table">
+      {newsletterPicks.map((tool) => {
+        const program = getProgram(tool.slug);
+        return (
+          <article class="comparison-card">
+            <div class="comparison-head">
+              <div>
+                <p class="panel-label">{tool.bestFor}</p>
+                <h2>{tool.name}</h2>
+              </div>
+              {program && <span class={`status-pill ${program.status}`}>{statusLabel[program.status] ?? program.status}</span>}
+            </div>
+            <p>{tool.role}</p>
+            <dl>
+              <div>
+                <dt>無料確認</dt>
+                <dd>{tool.freePlan}</dd>
+              </div>
+              <div>
+                <dt>日本語運用</dt>
+                <dd>{tool.japaneseFit}</dd>
+              </div>
+            </dl>
+            <div class="button-row">
+              <a class="button" href={tool.article}>{tool.articleLabel}</a>
+              {program && <a class="button primary" href={`/go/${program.slug}/`}>公式ページへ</a>}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section id="later-picks" class="section compact">
+    <div class="section-title">
+      <h2>次に育てる候補</h2>
+    </div>
+    <div class="later-tool-grid">
+      {laterPicks.map((tool) => {
+        const program = getProgram(tool.slug);
+        return (
+          <article class="later-tool-card">
+            <p class="panel-label">{tool.timing}</p>
+            <h2>{tool.name}</h2>
+            <p>{tool.note}</p>
+            {program && <a class="button" href={`/go/${program.slug}/`}>公式ページを確認</a>}
+          </article>
+        );
+      })}
     </div>
   </section>
 
