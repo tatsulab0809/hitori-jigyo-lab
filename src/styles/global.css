@@ -473,6 +473,28 @@ h3 {
   margin-top: 0;
 }
 
+.operator-principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 34px 0;
+}
+
+.operator-principles article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.operator-principles h2 {
+  color: var(--navy);
+  font-size: clamp(1.16rem, 2vw, 1.35rem);
+}
+
+.operator-principles p:not(.panel-label) {
+  color: var(--muted);
+}
+
 .section {
   padding: 56px 0;
 }
@@ -957,6 +979,59 @@ h3 {
   height: auto;
 }
 
+.article-table {
+  width: 100%;
+  margin: 34px 0;
+  border-collapse: collapse;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  font-size: 0.96rem;
+}
+
+.article-table th,
+.article-table td {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-table thead th {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.article-table tbody th {
+  width: 22%;
+  background: #fff7df;
+  color: var(--gold-dark);
+}
+
+.mini-chart {
+  display: grid;
+  gap: 16px;
+  margin: 34px 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.mini-chart div {
+  display: grid;
+  gap: 8px;
+}
+
+.mini-chart span {
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.mini-chart b {
+  display: block;
+  height: 16px;
+  background: linear-gradient(90deg, var(--gold), #7aa883);
+}
+
 .note-box {
   margin-top: 42px;
   padding: 24px;
@@ -1144,7 +1219,8 @@ h3 {
   .overseas-grid,
   .tool-row,
   .format-grid,
-  .affiliate-status-grid {
+  .affiliate-status-grid,
+  .operator-principles {
     grid-template-columns: 1fr;
   }
 
@@ -1173,6 +1249,11 @@ h3 {
   .comparison-card dl div {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .article-table {
+    display: block;
+    overflow-x: auto;
   }
 
   .latest-post,

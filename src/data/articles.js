@@ -1,5 +1,29 @@
 export const articles = [
   {
+    title: "海外SaaSを契約する前に見る支払い・解約チェックリスト",
+    description: "海外SaaSを日本の個人事業主が契約する前に確認したい、通貨、無料トライアル、解約導線、請求書、日本語対応、サポートを実務目線で整理します。",
+    href: "/articles/overseas-saas-payment-cancel-checklist/",
+    category: "ひとり事業ツール",
+    date: "2026-08-26",
+    image: "/images/eyecatch-overseas-saas-payment-cancel-comic.png"
+  },
+  {
+    title: "Kitとbeehiiv、ニュースレターを始めるならどちらから触るか",
+    description: "Kitとbeehiivを、日本語ニュースレター運用の始め方で比較します。登録フォーム、最初の1通、読者導線、無料プラン、続けやすさをひとり事業目線で整理します。",
+    href: "/articles/kit-beehiiv-starting-comparison/",
+    category: "ひとり事業ツール",
+    date: "2026-08-26",
+    image: "/images/eyecatch-kit-beehiiv-starting-comparison-comic.png"
+  },
+  {
+    title: "Webflow、WordPress、Astroをひとり事業目線で比べる",
+    description: "Webflow、WordPress、Astroを、日本の個人事業主が小さな事業サイトや記事メディアに使うならどう選ぶか。見た目、更新性、費用、学習コスト、アフィリエイト導線まで整理します。",
+    href: "/articles/webflow-wordpress-astro-comparison/",
+    category: "ひとり事業ツール",
+    date: "2026-08-26",
+    image: "/images/eyecatch-webflow-wordpress-astro-comparison-comic.png"
+  },
+  {
     title: "impact.comに落ちたので、海外ASP審査に必要なものを考える",
     description: "impact.comのmedia partner申請が却下された実録から、海外ASP審査で見られそうなサイトの実績、記事数、トラフィック、媒体プロフィールを整理します。",
     href: "/articles/impact-declined-learning-plan/",
