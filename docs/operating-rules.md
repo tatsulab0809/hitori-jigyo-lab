@@ -34,7 +34,7 @@ Then continue from the latest project files and current user instruction.
 
 Current priority:
 
-Build the minimum public version of ひとり事業ラボ before registering for affiliate services.
+Shift the published ひとり事業ラボ site into an overseas AI/SaaS affiliate business hub while preserving the experiment-log editorial style.
 
 ## Confirmed Naming
 
@@ -54,7 +54,9 @@ These require TATSU's own account, identity, payment, or judgment:
 - Google account confirmation
 - Domain purchase
 - ASP registration
+- Overseas affiliate and partner program registration
 - Bank account details
+- PayPal, Wise, Stripe, and tax form setup for overseas payouts
 - Identity and anonymity policy
 - Final publishing approval
 - Real experience notes
@@ -75,6 +77,9 @@ Codex can handle:
 - Internal links
 - CTA structure
 - Comparison tables
+- Overseas SaaS review templates
+- Diagnosis and tool-comparison pages
+- Affiliate registration profile text in Japanese and English
 - Analytics and report templates
 
 ## Editorial Standard

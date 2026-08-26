@@ -1,0 +1,36 @@
+---
+import { affiliatePrograms } from "../../data/affiliate/programs.js";
+
+export function getStaticPaths() {
+  return affiliatePrograms.map((program) => ({
+    params: { slug: program.slug },
+    props: { program }
+  }));
+}
+
+const { program } = Astro.props;
+const destination = program.trackingUrl || program.officialUrl;
+const isAffiliate = Boolean(program.trackingUrl);
+const linkLabel = isAffiliate ? "紹介リンクへ進む" : "公式サイトへ進む";
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+    <title>{program.name}へ移動中 | ひとり事業ラボ</title>
+  </head>
+  <body>
+    <main>
+      <p>{program.name}の{isAffiliate ? "紹介ページ" : "公式ページ"}へ移動しています。</p>
+      <p><a href={destination} rel={isAffiliate ? "sponsored nofollow noopener noreferrer" : "nofollow noopener noreferrer"}>{linkLabel}</a></p>
+      <p><a href="/affiliate-disclosure/">アフィリエイト表記</a></p>
+    </main>
+    <script is:inline define:vars={{ destination }}>
+      window.location.replace(destination);
+    </script>
+  </body>
+</html>

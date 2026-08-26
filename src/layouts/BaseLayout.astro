@@ -3,7 +3,7 @@ import "../styles/global.css";
 
 const {
   title = "ひとり事業ラボ",
-  description = "ひとりで小さく事業をつくる実験記録"
+  description = "AIと海外SaaSで、ひとり事業を小さく作る実験室"
 } = Astro.props;
 ---
 
@@ -12,6 +12,7 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
+    <meta name="impact-site-verification" value="4c93ea74-e0dc-42a8-8079-de8499b53721" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
   </head>
@@ -19,15 +20,16 @@ const {
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="/">ひとり事業ラボ</a>
-        <p>Written by TATSU</p>
+        <p>AI / SaaS / Solo Business Lab</p>
       </div>
     </header>
     <nav class="site-nav" aria-label="Primary navigation">
       <div class="nav-inner">
         <a href="/">ホーム</a>
+        <a href="/diagnosis/">診断</a>
+        <a href="/tools/">ツール比較</a>
+        <a href="/overseas-saas/">海外SaaS</a>
         <a href="/categories/experiment-log/">実験ログ</a>
-        <a href="/categories/solo-business-tools/">ツール</a>
-        <a href="/categories/roadmap/">ロードマップ</a>
         <a href="/articles/">記事一覧</a>
         <a href="/about/">このサイトについて</a>
       </div>
@@ -38,13 +40,14 @@ const {
     <footer class="site-footer">
       <div>
         <strong>ひとり事業ラボ</strong>
-        <p>ひとりで小さく事業をつくる実験記録</p>
+        <p>AIと海外SaaSで、ひとり事業を小さく作る実験室</p>
       </div>
       <nav aria-label="Footer navigation">
         <a href="/operator/">運営者情報</a>
         <a href="/privacy-policy/">プライバシーポリシー</a>
         <a href="/disclaimer/">免責事項</a>
         <a href="/affiliate-disclosure/">アフィリエイト表記</a>
+        <a href="/affiliate-programs/">紹介プログラム一覧</a>
         <a href="/contact/">お問い合わせ</a>
       </nav>
     </footer>

@@ -4,25 +4,25 @@ import { articles } from "../data/articles.js";
 
 const featuredArticles = [
   {
-    title: "ひとり事業ラボとは",
-    label: "まず読む",
-    description: "このサイトで試すこと、TATSUが記録すること、読者に届けたいことをまとめます。",
-    href: "/articles/about-hitori-jigyo-lab/",
-    image: "/images/card-about.svg"
+    title: "ひとり事業ツール診断",
+    label: "診断",
+    description: "目的と悩みから、海外AI/SaaSや国内ツールの候補を整理します。",
+    href: "/diagnosis/",
+    image: "/images/eyecatch-tool-diagnosis-comic.png"
   },
   {
-    title: "本業を持ちながら小さな事業を育てる全体設計",
-    label: "設計",
-    description: "本業を軸にしながら、ツールを使って小さなアイデアを形にする考え方を整理します。",
-    href: "/articles/monthly-50000-roadmap/",
-    image: "/images/card-roadmap.svg"
+    title: "海外SaaSを使う前に",
+    label: "海外SaaS",
+    description: "英語UI、支払い、解約、円換算など、登録前に見るポイントをまとめます。",
+    href: "/overseas-saas/",
+    image: "/images/eyecatch-overseas-saas-comic.png"
   },
   {
-    title: "Codexで事業実験サイトを作る手順",
-    label: "実験",
-    description: "Astro、GitHub、Cloudflare Pagesを使って事業ログの拠点を立ち上げる過程を記録します。",
-    href: "/articles/build-affiliate-site-with-codex/",
-    image: "/images/card-codex.svg"
+    title: "ツール比較ハブ",
+    label: "比較",
+    description: "AI、Web制作、EC、ニュースレター、会計まわりの道具を用途別に見ます。",
+    href: "/tools/",
+    image: "/images/eyecatch-tool-comparison-comic.png"
   }
 ];
 
@@ -31,12 +31,26 @@ const recentArticles = articles.slice(0, 3);
 
 <BaseLayout>
   <section class="intro">
-    <p class="eyebrow">Small Business Lab</p>
-    <h1>ひとりで小さく事業をつくる実験記録</h1>
+    <p class="eyebrow">AI / SaaS / Solo Business Lab</p>
+    <h1>AIと海外SaaSで、ひとり事業を小さく作る実験室</h1>
     <p>
-      本業を大切にしながら、限られた時間の中でAIツールや便利なWebサービスを使い、
-      小さな事業アイデアを形にできるかを実験します。
+      TATSUがCodex、海外AIツール、Web制作サービス、発信ツールを実際に試しながら、
+      日本の個人事業主や副業者にとって本当に使えるかを記録します。
     </p>
+  </section>
+
+  <section class="section compact">
+    <div class="lab-panel">
+      <div>
+        <p class="panel-label">Current Focus</p>
+        <h2>海外ツールを「日本で使える道具」に翻訳する</h2>
+        <p>
+          料金、無料プラン、日本語対応、支払い、解約、ChatGPTやCodexで代替できるか。
+          ひとりで事業を作る人が迷いやすいところから検証します。
+        </p>
+      </div>
+      <a class="button primary" href="/overseas-saas/">海外SaaS入門へ</a>
+    </div>
   </section>
 
   <section class="featured-grid" aria-label="Featured articles">
@@ -101,10 +115,10 @@ const recentArticles = articles.slice(0, 3);
       <section class="side-box">
         <h2>カテゴリ</h2>
         <div class="side-links">
-          <a href="/categories/ai-tools/">AIとツール活用</a>
-          <a href="/categories/experiment-log/">副業実験ログ</a>
-          <a href="/categories/solo-business-tools/">ひとり事業ツール</a>
-          <a href="/categories/roadmap/">小さな事業設計</a>
+          <a href="/diagnosis/">ひとり事業ツール診断</a>
+          <a href="/tools/">ツール比較ハブ</a>
+          <a href="/overseas-saas/">海外SaaS入門</a>
+          <a href="/categories/experiment-log/">事業実験ログ</a>
           <a href="/categories/workspace/">作業環境</a>
         </div>
       </section>

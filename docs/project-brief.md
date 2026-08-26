@@ -39,6 +39,24 @@ This is not a traditional SEO article farm. The site should be an experiment-log
 
 AI is an important tool and differentiator, but the site name should stay broad enough to help individual business owners and side-business builders who are not explicitly searching for AI content.
 
+## Current Strategic Direction
+
+As of 2026-08-26, the main affiliate direction is overseas AI/SaaS tools for Japanese solo business owners and side-business builders.
+
+The site should keep the existing "ひとり事業ラボ" identity, but the revenue engine should shift toward:
+
+- Overseas AI tools
+- Overseas SaaS tools
+- Web, no-code, and EC platforms
+- Newsletter and audience-building tools
+- Tool diagnosis, comparison, and implementation support
+
+The editorial promise is:
+
+> AIと海外SaaSで、ひとり事業を小さく作る実験室。
+
+See `docs/phase-1-overseas-affiliate-audit.md` for the current Phase 1 audit and direction.
+
 ## Positioning
 
 The site focuses on tools and workflows for solo business and side income in the AI era.
@@ -47,6 +65,7 @@ Main topics:
 
 - AI tools
 - SaaS
+- Overseas AI/SaaS tools
 - No-code tools
 - Rental servers
 - WordPress, Astro, and Next.js

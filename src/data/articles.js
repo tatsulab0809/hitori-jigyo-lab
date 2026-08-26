@@ -1,11 +1,43 @@
 export const articles = [
   {
+    title: "PartnerStackとimpact.comに申請する前に整えること",
+    description: "海外SaaSアフィリエイトを始める前に、ネットワーク申請で見られやすいサイト情報、プロフィール、媒体説明を整理します。",
+    href: "/articles/partnerstack-impact-application-checklist/",
+    category: "副業実験ログ",
+    date: "2026-08-26",
+    image: "/images/eyecatch-overseas-saas-checklist-comic.png"
+  },
+  {
+    title: "beehiivとKitはどちらが日本の個人発信に向いているか",
+    description: "beehiivとKitを、日本の個人事業主・副業者がニュースレターや読者リストを作る道具として使うならどう見るかを整理します。",
+    href: "/articles/beehiiv-vs-kit-japanese-solo-business/",
+    category: "ひとり事業ツール",
+    date: "2026-08-26",
+    image: "/images/eyecatch-newsletter-tools-comic.png"
+  },
+  {
+    title: "Webflowは日本のひとり事業サイトに向いているか",
+    description: "Webflowを日本の個人事業主・副業者目線で、使いどころ、難しさ、WordPressやAstroとの違い、アフィリエイト条件の確認ポイントまで整理します。",
+    href: "/articles/webflow-for-japanese-solo-business/",
+    category: "ひとり事業ツール",
+    date: "2026-08-26",
+    image: "/images/eyecatch-webflow-solo-business-comic.png"
+  },
+  {
+    title: "海外SaaSを日本の個人事業主が使う前に確認すること",
+    description: "海外SaaSを契約する前に、日本語対応、料金、支払い、解約、無料プラン、ChatGPTやCodexで代替できるかを確認するためのチェックリストです。",
+    href: "/articles/overseas-saas-before-use/",
+    category: "ひとり事業ツール",
+    date: "2026-08-26",
+    image: "/images/eyecatch-overseas-saas-checklist-comic.png"
+  },
+  {
     title: "個人事業主のホームページ集客で失敗しやすい原因と改善ポイント",
     description: "作っただけで放置されがちなホームページを、個人事業主が集客の入口として育てるための改善ポイントを整理します。",
     href: "/articles/homepage-attract-failures/",
     category: "小さな事業設計",
     date: "2026-06-06",
-    image: "/images/eyecatch-homepage-attract-failures.png"
+    image: "/images/eyecatch-homepage-attract-failures-comic.png"
   },
   {
     title: "個人事業主がホームページに用意したいページ構成",
@@ -13,7 +45,7 @@ export const articles = [
     href: "/articles/solo-owner-homepage-page-structure/",
     category: "小さな事業設計",
     date: "2026-06-05",
-    image: "/images/eyecatch-solo-owner-homepage-page-structure.png"
+    image: "/images/eyecatch-solo-owner-homepage-page-structure-comic.png"
   },
   {
     title: "建設業の1人親方がホームページに載せるべき内容",
@@ -21,7 +53,7 @@ export const articles = [
     href: "/articles/construction-one-man-homepage-content/",
     category: "小さな事業設計",
     date: "2026-06-05",
-    image: "/images/eyecatch-construction-homepage-cafe.png"
+    image: "/images/eyecatch-construction-homepage-comic.png"
   },
   {
     title: "デジタルが得意ではない職人事業主の最初の一歩",
@@ -29,7 +61,7 @@ export const articles = [
     href: "/articles/craftsman-digital-first-step/",
     category: "小さな事業設計",
     date: "2026-06-05",
-    image: "/images/eyecatch-craftsman-digital-painter.png"
+    image: "/images/eyecatch-craftsman-digital-comic.png"
   },
   {
     title: "本業が忙しい人でも副業を形にできるのか",
@@ -165,7 +197,7 @@ export const articles = [
     href: "/articles/about-hitori-jigyo-lab/",
     category: "副業実験ログ",
     date: "2026-06-04",
-    image: "/images/eyecatch-about-hitori-jigyo-lab.png"
+    image: "/images/eyecatch-about-hitori-jigyo-lab-comic.png"
   },
   {
     title: "本業を持ちながら小さな事業を育てる全体設計",
@@ -187,22 +219,22 @@ export const articles = [
 
 export const categories = [
   {
-    title: "AIとツール活用",
-    description: "ChatGPT、Codex、Canva、Notionなど、ひとり事業を進めるための道具を扱います。",
+    title: "AIツール実験",
+    description: "ChatGPT、Codex、海外AIツールを、ひとり事業の実務で使えるか試します。",
     href: "/categories/ai-tools/"
   },
   {
-    title: "副業実験ログ",
-    description: "試した副業モデル、作業時間、結果、失敗、次に変えることを記録します。",
+    title: "事業実験ログ",
+    description: "海外SaaS登録、作業時間、結果、失敗、次に変えることを記録します。",
     href: "/categories/experiment-log/"
   },
   {
-    title: "ひとり事業ツール",
-    description: "サーバー、会計ソフト、EC、ASP、業務効率化ツールなどを比較します。",
+    title: "ツール比較",
+    description: "国内外のSaaS、Web制作、EC、会計、発信ツールを比較します。",
     href: "/categories/solo-business-tools/"
   },
   {
-    title: "小さな事業設計",
+    title: "ひとり事業ロードマップ",
     description: "本業を持つ人が小さな事業アイデアを形にするための手順を整理します。",
     href: "/categories/roadmap/"
   },

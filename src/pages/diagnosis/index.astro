@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="ひとり事業ツール診断 | ひとり事業ラボ"
+  description="目的と悩みから、ひとり事業に合うAIツール、海外SaaS、Web制作、発信ツールの候補を整理します。"
+>
+  <section class="page-heading">
+    <p class="eyebrow">Tool Diagnosis</p>
+    <h1>ひとり事業ツール診断</h1>
+    <p>
+      いきなり有料ツールを契約する前に、今の目的と困りごとから必要な道具を整理します。
+      まずは手作業でも判断できる形で公開し、実験しながら診断ツール化していきます。
+    </p>
+  </section>
+
+  <section class="section compact">
+    <div class="wide-visual">
+      <img src="/images/eyecatch-tool-diagnosis-comic.png" alt="ひとり事業に使う道具を4コマ漫画調で選んでいるイラスト" />
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="decision-grid">
+      <article class="decision-card">
+        <p class="panel-label">Case 01</p>
+        <h2>発信を始めたい</h2>
+        <p>候補はニュースレター、ブログ、X、note。海外ならbeehiivやKit、国内導線ならnoteやブログを比べます。</p>
+        <a href="/tools/#newsletter">発信ツールを見る</a>
+      </article>
+      <article class="decision-card">
+        <p class="panel-label">Case 02</p>
+        <h2>サイトを作りたい</h2>
+        <p>Astro、WordPress、Webflow、Shopifyなどから、更新頻度、費用、作業できる時間で候補を分けます。</p>
+        <a href="/tools/#website">Web制作ツールを見る</a>
+      </article>
+      <article class="decision-card">
+        <p class="panel-label">Case 03</p>
+        <h2>作業時間を減らしたい</h2>
+        <p>文章作成、書類、文字起こし、調査、画像作成をAIでどこまで短縮できるかを見ます。</p>
+        <a href="/categories/ai-tools/">AIツール実験を見る</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="checklist-panel">
+      <p class="panel-label">Before Subscribe</p>
+      <h2>契約前に見るチェック項目</h2>
+      <ul>
+        <li>無料プランや無料トライアルで目的を試せるか</li>
+        <li>日本語入力、日本語出力、日本の顧客向け表示に問題がないか</li>
+        <li>月額料金を円換算しても続けられるか</li>
+        <li>解約方法が分かりやすいか</li>
+        <li>ChatGPTやCodexだけで代替できないか</li>
+        <li>今すぐ必要か、売上が出てからでよいか</li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

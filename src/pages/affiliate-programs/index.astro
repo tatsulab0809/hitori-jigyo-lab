@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { affiliatePrograms } from "../../data/affiliate/programs.js";
+
+const priorityPrograms = affiliatePrograms
+  .filter((program) => program.type !== "network")
+  .sort((a, b) => a.priority - b.priority);
+
+const networks = affiliatePrograms
+  .filter((program) => program.type === "network")
+  .sort((a, b) => a.priority - b.priority);
+---
+
+<BaseLayout
+  title="紹介プログラム一覧 | ひとり事業ラボ"
+  description="ひとり事業ラボで確認中の海外SaaSアフィリエイトプログラムと、申請・承認・掲載ステータスを整理します。"
+>
+  <section class="page-heading">
+    <p class="eyebrow">Affiliate Programs</p>
+    <h1>紹介プログラム一覧</h1>
+    <p>
+      ここでは、ひとり事業ラボで扱う予定の海外SaaS紹介プログラムを管理します。
+      承認前は公式ページへのリンク、承認後は正規の紹介リンクに差し替えます。
+    </p>
+  </section>
+
+  <section class="section compact">
+    <div class="lab-panel">
+      <div>
+        <p class="panel-label">Before Apply</p>
+        <h2>まず申請プロフィールを整える</h2>
+        <p>PartnerStackとimpact.comでは、媒体説明、読者、宣伝方法、所有サイトの確認が重要になります。申請前に、サイトの立ち位置を一度そろえます。</p>
+      </div>
+      <a class="button primary" href="/articles/partnerstack-impact-application-checklist/">申請前チェックを読む</a>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="affiliate-status-grid">
+      {networks.map((program) => (
+        <article class="affiliate-program-card">
+          <p class="panel-label">Apply First</p>
+          <h2>{program.name}</h2>
+          <p>{program.contentFit}</p>
+          <dl>
+            <div><dt>状態</dt><dd>{program.status}</dd></div>
+            <div><dt>用途</dt><dd>{program.category}</dd></div>
+          </dl>
+          <p><a class="button primary" href={program.applyUrl} rel="nofollow noopener noreferrer">申請ページを開く</a></p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-heading">
+      <p class="eyebrow">Priority</p>
+      <h2>優先して申請・検証するサービス</h2>
+    </div>
+    <div class="affiliate-status-grid">
+      {priorityPrograms.map((program) => (
+        <article class="affiliate-program-card">
+          <p class="panel-label">{program.category}</p>
+          <h2>{program.name}</h2>
+          <p>{program.contentFit}</p>
+          <dl>
+            <div><dt>状態</dt><dd>{program.status}</dd></div>
+            <div><dt>報酬メモ</dt><dd>{program.commissionNote}</dd></div>
+            <div><dt>確認日</dt><dd>{program.checkedAt}</dd></div>
+          </dl>
+          <p class="button-row">
+            <a class="button primary" href={`/go/${program.slug}/`} rel={program.trackingUrl ? "sponsored nofollow" : "nofollow"}>公式ページを見る</a>
+            <a class="button" href={program.applyUrl} rel="nofollow noopener noreferrer">申請ページ</a>
+          </p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

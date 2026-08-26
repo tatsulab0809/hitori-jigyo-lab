@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="ツール比較ハブ | ひとり事業ラボ"
+  description="ひとり事業に使うAIツール、海外SaaS、Web制作、EC、ニュースレター、会計ツールを用途別に整理します。"
+>
+  <section class="page-heading">
+    <p class="eyebrow">Tool Comparison</p>
+    <h1>ツール比較ハブ</h1>
+    <p>
+      ここでは「有名だから」ではなく、ひとり事業で本当に使う場面があるかを基準に道具を整理します。
+      実際に試したものから、料金、使いやすさ、つまずきやすさを追記していきます。
+    </p>
+  </section>
+
+  <section class="section compact">
+    <div class="wide-visual">
+      <img src="/images/eyecatch-tool-comparison-comic.png" alt="ひとり事業に使うツールを4コマ漫画調で比較しているイラスト" />
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="lab-panel">
+      <div>
+        <p class="panel-label">Affiliate Operation</p>
+        <h2>紹介リンクは一箇所で管理します</h2>
+        <p>海外SaaSは承認状況や条件が変わりやすいので、記事ごとに直書きせず、紹介プログラム一覧と出口ページで管理します。</p>
+      </div>
+      <a class="button primary" href="/affiliate-programs/">紹介プログラム一覧</a>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="tool-stack">
+      <article id="ai" class="tool-row">
+        <div>
+          <p class="panel-label">AI</p>
+          <h2>AIツール</h2>
+        </div>
+        <p>文章、調査、画像、文字起こし、動画、業務自動化。ChatGPTやCodexで足りる部分と、専用ツールが必要な部分を分けます。</p>
+      </article>
+      <article id="website" class="tool-row">
+        <div>
+          <p class="panel-label">Website</p>
+          <h2>Web制作</h2>
+        </div>
+        <p>Astro、WordPress、Webflow、Framer、Carrdなど。自作、外注、AI併用のどれが現実的かを見ます。まずは <a href="/articles/webflow-for-japanese-solo-business/">Webflowの記事</a> から整理します。</p>
+      </article>
+      <article id="commerce" class="tool-row">
+        <div>
+          <p class="panel-label">Commerce</p>
+          <h2>EC・決済</h2>
+        </div>
+        <p>Shopify、決済リンク、予約、フォーム、デジタル商品販売。小さく売り始める導線を検証します。</p>
+      </article>
+      <article id="newsletter" class="tool-row">
+        <div>
+          <p class="panel-label">Audience</p>
+          <h2>ニュースレター・発信</h2>
+        </div>
+        <p>beehiiv、Kit、Substack、note、X。SEOだけを待たず、読者との接点を作る道具を比較します。最初の比較は <a href="/articles/beehiiv-vs-kit-japanese-solo-business/">beehiivとKitの記事</a> です。</p>
+      </article>
+      <article id="backoffice" class="tool-row">
+        <div>
+          <p class="panel-label">Back Office</p>
+          <h2>会計・書類</h2>
+        </div>
+        <p>会計ソフト、請求書、見積もり、報告書テンプレート。地味だけど時間を守る領域です。</p>
+      </article>
+    </div>
+  </section>
+</BaseLayout>
