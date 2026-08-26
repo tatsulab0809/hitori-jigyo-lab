@@ -25,7 +25,7 @@ export const affiliatePrograms = [
     name: "impact.com",
     type: "network",
     priority: 2,
-    status: "to_apply",
+    status: "declined",
     category: "affiliate marketplace",
     officialUrl: "https://impact.com/partners/",
     applyUrl: "https://impact.com/partners/",
@@ -36,7 +36,8 @@ export const affiliatePrograms = [
     contentFit: "Useful for SaaS, ecommerce, and creator tool partnerships.",
     complianceNotes: [
       "Verify at least one media property if required.",
-      "Keep profile description specific to Japanese solo operators."
+      "Keep profile description specific to Japanese solo operators.",
+      "Initial marketplace application was declined on 2026-08-26; revisit after stronger traffic and more hands-on review content."
     ],
     checkedAt: "2026-08-26"
   },

@@ -1,5 +1,45 @@
 export const articles = [
   {
+    title: "impact.comに落ちたので、海外ASP審査に必要なものを考える",
+    description: "impact.comのmedia partner申請が却下された実録から、海外ASP審査で見られそうなサイトの実績、記事数、トラフィック、媒体プロフィールを整理します。",
+    href: "/articles/impact-declined-learning-plan/",
+    category: "副業実験ログ",
+    date: "2026-08-26",
+    image: "/images/eyecatch-impact-declined-learning-comic.png"
+  },
+  {
+    title: "PartnerStackに申し込んだ実録。海外SaaSアフィリエイトの最初の壁",
+    description: "PartnerStack Networkに実際に申し込んだ流れを、ビジネス名、LinkedIn、販売チャネル、月間トラフィック、コミッション希望まで記録します。",
+    href: "/articles/partnerstack-application-log/",
+    category: "副業実験ログ",
+    date: "2026-08-26",
+    image: "/images/eyecatch-partnerstack-application-log-comic.png"
+  },
+  {
+    title: "beehiivで日本語ニュースレターは作れるか確認したいこと",
+    description: "beehiivを日本語ニュースレター運用に使うなら、表示、登録フォーム、配信、料金、読者導線をどう確認するべきかを整理します。",
+    href: "/articles/beehiiv-japanese-newsletter-test/",
+    category: "ひとり事業ツール",
+    date: "2026-08-26",
+    image: "/images/eyecatch-beehiiv-japanese-newsletter-comic.png"
+  },
+  {
+    title: "Kitでニュースレターを始める前に確認したいこと",
+    description: "Kitを日本の個人事業主がニュースレターや読者リスト作りに使う前に、読者像、配信頻度、登録フォーム、導線、料金を確認します。",
+    href: "/articles/kit-newsletter-before-start/",
+    category: "ひとり事業ツール",
+    date: "2026-08-26",
+    image: "/images/eyecatch-kit-newsletter-before-start-comic.png"
+  },
+  {
+    title: "Webflow無料プランをひとり事業目線で触る前に見ること",
+    description: "Webflowの無料プランを、日本の個人事業主が試すならどこを見るべきか。見た目、更新性、日本語、公開、料金、解約の不安を実験ログとして整理します。",
+    href: "/articles/webflow-free-plan-hands-on/",
+    category: "ひとり事業ツール",
+    date: "2026-08-26",
+    image: "/images/eyecatch-webflow-free-plan-test-comic.png"
+  },
+  {
     title: "PartnerStackとimpact.comに申請する前に整えること",
     description: "海外SaaSアフィリエイトを始める前に、ネットワーク申請で見られやすいサイト情報、プロフィール、媒体説明を整理します。",
     href: "/articles/partnerstack-impact-application-checklist/",

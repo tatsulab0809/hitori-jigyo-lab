@@ -22,7 +22,7 @@ Use this tracker when submitting real applications. Keep the public site data in
 | Program | Priority | Status | Account Email | Submitted | Result | Next Action |
 | --- | ---: | --- | --- | --- | --- | --- |
 | PartnerStack | 1 | submitted | tatsu.lab0809@gmail.com | 2026-08-26 | Under review | Wait for email/app notification |
-| impact.com | 2 | to_apply |  |  |  | Create partner account and verify media property |
+| impact.com | 2 | declined | tatsu.lab0809@gmail.com | 2026-08-26 | Declined | Revisit after more traffic and hands-on review content |
 | Webflow Affiliate | 3 | to_apply |  |  |  | Apply after network/profile setup |
 | beehiiv Partner | 4 | to_apply |  |  |  | Apply after profile copy is ready |
 | Kit Affiliate | 5 | to_apply |  |  |  | Apply after newsletter positioning is clear |
