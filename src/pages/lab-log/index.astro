@@ -1,0 +1,102 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const timeline = [
+  {
+    date: "2026-06",
+    title: "サイト公開",
+    description: "Astro、GitHub、Cloudflare Pagesで、ひとり事業ラボを公開。"
+  },
+  {
+    date: "2026-08-26",
+    title: "海外SaaSアフィリエイトへ方向転換",
+    description: "AI、Web制作、ニュースレター、海外SaaSの実験メディアとして導線を整理。"
+  },
+  {
+    date: "2026-08-26",
+    title: "PartnerStackへ申請",
+    description: "ネットワークプロフィールを作成し、媒体説明と販売チャネルを登録。現在は審査待ち。"
+  },
+  {
+    date: "2026-08-26",
+    title: "impact.comは却下",
+    description: "即時却下を受け、記事数、運営者情報、申請に耐える実体験コンテンツを強化。"
+  },
+  {
+    date: "2026-08-26",
+    title: "サイト強化を継続",
+    description: "比較記事、チェックリスト、ニュースレター導線、実験ログページを追加。"
+  }
+];
+---
+
+<BaseLayout
+  title="実験ログ | ひとり事業ラボ"
+  description="ひとり事業ラボの運営・申請・改善の流れを時系列でまとめる実験ログページです。"
+>
+  <section class="page-heading">
+    <p class="eyebrow">Lab Log</p>
+    <h1>ひとり事業ラボの実験ログ</h1>
+    <p>
+      サイト公開、海外SaaSアフィリエイト申請、却下、改善、記事追加。
+      うまくいったことだけでなく、途中の判断も残します。
+    </p>
+  </section>
+
+  <section class="section compact">
+    <div class="wide-visual">
+      <img src="/images/eyecatch-lab-log-first-steps-comic.png" alt="作業場の床に広げた長いタイムラインにサイト運営の節目を並べる漫画調イラスト" />
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="lab-panel">
+      <div>
+        <p class="panel-label">Why Log?</p>
+        <h2>これは成功談ではなく、進行中の作業記録です</h2>
+        <p>
+          ひとり事業は、きれいな計画よりも小さな改善の積み重ねで進みます。
+          申請に落ちたことも、導線を直したことも、あとで使える判断材料として残します。
+        </p>
+      </div>
+      <a class="button primary" href="/articles/first-steps-overseas-saas-affiliate-log/">最初にやったことを読む</a>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>時系列ログ</h2>
+    </div>
+    <div class="timeline-list">
+      {timeline.map((item) => (
+        <article class="timeline-item">
+          <time>{item.date}</time>
+          <div>
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="decision-grid">
+      <article class="decision-card">
+        <p class="panel-label">Try</p>
+        <h2>試す</h2>
+        <p>海外SaaS、AI、Web制作ツールを、小さな作業単位で触ります。</p>
+      </article>
+      <article class="decision-card">
+        <p class="panel-label">Write</p>
+        <h2>書く</h2>
+        <p>試したこと、迷ったこと、申請の結果を記事として残します。</p>
+      </article>
+      <article class="decision-card">
+        <p class="panel-label">Improve</p>
+        <h2>直す</h2>
+        <p>トップ、ツールページ、運営者情報、導線を少しずつ改善します。</p>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

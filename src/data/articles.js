@@ -1,5 +1,21 @@
 export const articles = [
   {
+    title: "海外SaaSアフィリエイトを始めて最初にやったこと",
+    description: "ひとり事業ラボで海外SaaSアフィリエイトを始めるために、サイト方針、記事追加、申請、却下後の改善、導線整理をどう進めたかを時系列で記録します。",
+    href: "/articles/first-steps-overseas-saas-affiliate-log/",
+    category: "副業実験ログ",
+    date: "2026-08-26",
+    image: "/images/eyecatch-lab-log-first-steps-comic.png"
+  },
+  {
+    title: "ひとり事業ラボでニュースレターを始める理由",
+    description: "海外SaaSやAIツールの実験記録を、記事だけでなくニュースレターでも届ける理由を整理します。SEO、SNS、読者リスト、アフィリエイト導線をひとり事業目線で考えます。",
+    href: "/articles/why-start-newsletter-for-solo-business-lab/",
+    category: "副業実験ログ",
+    date: "2026-08-26",
+    image: "/images/eyecatch-newsletter-start-reason-comic.png"
+  },
+  {
     title: "海外SaaSを契約する前に見る支払い・解約チェックリスト",
     description: "海外SaaSを日本の個人事業主が契約する前に確認したい、通貨、無料トライアル、解約導線、請求書、日本語対応、サポートを実務目線で整理します。",
     href: "/articles/overseas-saas-payment-cancel-checklist/",
