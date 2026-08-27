@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const tools = [
+  {
+    name: "Google Analytics",
+    fit: "サイト内の行動を見たい人",
+    good: "ページ閲覧、流入元、イベント、回遊など、サイト内の動きを確認できる。",
+    caution: "数字が多く、目的を決めずに入れると見る場所が増えるだけになりやすい。",
+    firstCheck: "見たい行動、クリック計測、プライバシー表記、Cookie同意の考え方。",
+    article: "/articles/analytics-search-console-before-setup/"
+  },
+  {
+    name: "Search Console",
+    fit: "検索流入と掲載状況を見たい人",
+    good: "検索キーワード、表示回数、クリック、インデックス状況を確認できる。",
+    caution: "導入してすぐ大きな数字が出るわけではない。記事が育つまで待つ必要がある。",
+    firstCheck: "所有権確認、サイトマップ、インデックス、検索クエリ、改善する記事。",
+    article: "/articles/analytics-search-console-before-setup/"
+  },
+  {
+    name: "手動ログ",
+    fit: "最初はシンプルに改善履歴を残したい人",
+    good: "記事数、追加日、申請状況、クリック候補を自分で把握しやすい。",
+    caution: "正確なアクセス解析にはならない。手で更新するので忘れやすい。",
+    firstCheck: "月次ログ、記事追加数、申請状況、次に見る数字、更新日。",
+    article: "/monthly-log/"
+  }
+];
+---
+
+<BaseLayout
+  title="アクセス解析ツール比較 | ひとり事業ラボ"
+  description="Google Analytics、Search Console、手動ログを、アフィリエイトサイト改善とひとり事業の運営ログ視点で比較します。"
+>
+  <section class="page-heading">
+    <p class="eyebrow">Compare Analytics Tools</p>
+    <h1>アクセス解析ツール比較</h1>
+    <p>Google Analytics、Search Console、手動ログを、アフィリエイトサイト改善の視点で比較します。最初に大事なのは、数字を集めることより「何を見るか」を決めることです。</p>
+  </section>
+
+  <section class="section compact">
+    <div class="compare-summary">
+      <article>
+        <p class="panel-label">Behavior</p>
+        <h2>行動を見るならGA</h2>
+        <p>記事からツールページ、公式導線へどう動くかを見るならGoogle Analyticsが候補です。</p>
+      </article>
+      <article>
+        <p class="panel-label">Search</p>
+        <h2>検索を見るならSC</h2>
+        <p>どの記事が検索に出ているか、どんな言葉で見つかるかを見るならSearch Consoleです。</p>
+      </article>
+      <article>
+        <p class="panel-label">Start</p>
+        <h2>初期は手動ログも有効</h2>
+        <p>記事数や申請状況を月ごとに残すだけでも、運営の判断材料になります。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>3つの見方</h2>
+    </div>
+    <div class="comparison-table">
+      {tools.map((tool) => (
+        <article class="comparison-card">
+          <div class="comparison-head">
+            <div>
+              <p class="panel-label">{tool.fit}</p>
+              <h2>{tool.name}</h2>
+            </div>
+          </div>
+          <dl>
+            <div>
+              <dt>良いところ</dt>
+              <dd>{tool.good}</dd>
+            </div>
+            <div>
+              <dt>注意点</dt>
+              <dd>{tool.caution}</dd>
+            </div>
+            <div>
+              <dt>最初に確認</dt>
+              <dd>{tool.firstCheck}</dd>
+            </div>
+          </dl>
+          <div class="button-row">
+            <a class="button" href={tool.article}>関連記事</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="review-format">
+      <p class="panel-label">Before Setup</p>
+      <h2>入れる前に決めること</h2>
+      <div class="format-grid">
+        <span>見る数字</span>
+        <span>クリック導線</span>
+        <span>記事別改善</span>
+        <span>検索クエリ</span>
+        <span>月次記録</span>
+        <span>プライバシー表記</span>
+        <span>公式リンク計測</span>
+        <span>改善サイクル</span>
+      </div>
+      <p>数字は見始めると楽しいですが、目的がないとただの水槽になります。見ているだけで時間が過ぎます。最初に見る場所を決めます。</p>
+    </div>
+  </section>
+</BaseLayout>

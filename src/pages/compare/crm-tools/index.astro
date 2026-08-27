@@ -1,0 +1,132 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { affiliatePrograms } from "../../../data/affiliate/programs.js";
+
+const programBySlug = Object.fromEntries(affiliatePrograms.map((program) => [program.slug, program]));
+
+const tools = [
+  {
+    slug: "hubspot",
+    name: "HubSpot",
+    fit: "問い合わせや見込み客をちゃんと管理したい人",
+    good: "無料CRMから始められ、問い合わせ、会社、担当者、メモを分けて管理しやすい。",
+    caution: "機能が多いので、最初から営業管理を作り込みすぎると重くなる。",
+    firstCheck: "無料範囲、連絡先登録、問い合わせ導線、通知、メール連携、解約や有料化の境目。",
+    article: "/articles/hubspot-free-crm-solo-business/"
+  },
+  {
+    slug: "notion",
+    name: "Notion",
+    fit: "案件メモや作業台と一緒に顧客情報を置きたい人",
+    good: "記事案、案件メモ、申請ログ、ツール一覧と一緒に柔らかく管理できる。",
+    caution: "自由すぎるので、顧客管理としての通知、履歴、担当ステータスは自分で設計する必要がある。",
+    firstCheck: "データベース項目、更新ルール、個人情報の扱い、検索性、入れすぎ防止。",
+    article: "/articles/notion-solo-business-workspace-limits/"
+  },
+  {
+    slug: "spreadsheet",
+    name: "スプレッドシート",
+    fit: "まず無料で問い合わせ管理を始めたい人",
+    good: "列を決めるだけで始められ、問い合わせ件数が少ない段階では十分に使える。",
+    caution: "履歴や通知が弱く、行が増えると見落としや入力ルール崩れが起きやすい。",
+    firstCheck: "項目、更新日、次アクション、ステータス、バックアップ、閲覧権限。",
+    article: "/articles/hubspot-free-crm-solo-business/"
+  }
+];
+
+const statusLabel = {
+  to_apply: "申請予定",
+  submitted: "審査中",
+  declined: "見送り中",
+  approved: "承認済み"
+};
+---
+
+<BaseLayout
+  title="CRM・顧客管理ツール比較 | ひとり事業ラボ"
+  description="HubSpot、Notion、スプレッドシートを、ひとり事業の問い合わせ管理・見込み客管理の視点で比較します。"
+>
+  <section class="page-heading">
+    <p class="eyebrow">Compare CRM Tools</p>
+    <h1>CRM・顧客管理ツール比較</h1>
+    <p>問い合わせ、見込み客、案件メモをどこで管理するか。HubSpot、Notion、スプレッドシートを、ひとり事業の作業量に合わせて比較します。</p>
+  </section>
+
+  <section class="section compact">
+    <div class="compare-summary">
+      <article>
+        <p class="panel-label">CRM</p>
+        <h2>管理を分けるなら HubSpot</h2>
+        <p>問い合わせ管理をサイト運営や営業導線と分けたいなら、無料CRMから試す価値があります。</p>
+      </article>
+      <article>
+        <p class="panel-label">Workspace</p>
+        <h2>作業台込みなら Notion</h2>
+        <p>記事案、案件、申請ログをまとめるなら便利。ただしCRMとしては設計が必要です。</p>
+      </article>
+      <article>
+        <p class="panel-label">Starter</p>
+        <h2>最初だけなら表で十分</h2>
+        <p>問い合わせが少ない間は、列を絞ったスプレッドシートが一番軽い場合もあります。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>3つの管理方法</h2>
+    </div>
+    <div class="comparison-table">
+      {tools.map((tool) => {
+        const program = programBySlug[tool.slug];
+        return (
+          <article class="comparison-card">
+            <div class="comparison-head">
+              <div>
+                <p class="panel-label">{tool.fit}</p>
+                <h2>{tool.name}</h2>
+              </div>
+              {program && <span class={`status-pill ${program.status}`}>{statusLabel[program.status] ?? program.status}</span>}
+            </div>
+            <dl>
+              <div>
+                <dt>良いところ</dt>
+                <dd>{tool.good}</dd>
+              </div>
+              <div>
+                <dt>注意点</dt>
+                <dd>{tool.caution}</dd>
+              </div>
+              <div>
+                <dt>最初に確認</dt>
+                <dd>{tool.firstCheck}</dd>
+              </div>
+            </dl>
+            <div class="button-row">
+              <a class="button" href={tool.article}>関連記事</a>
+              {program && <a class="button primary" href={`/go/${program.slug}/`}>公式ページへ</a>}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="review-format">
+      <p class="panel-label">How To Choose</p>
+      <h2>選ぶ前に決めること</h2>
+      <div class="format-grid">
+        <span>問い合わせ件数</span>
+        <span>次アクション管理</span>
+        <span>通知が必要か</span>
+        <span>個人情報の扱い</span>
+        <span>記事メモと分けるか</span>
+        <span>無料で足りる範囲</span>
+        <span>入力ルール</span>
+        <span>将来の営業導線</span>
+      </div>
+      <p>顧客管理は、最初から立派にしすぎると入力が続きません。少ない項目で始めて、見落としが出てから道具を強くするくらいが現実的です。</p>
+    </div>
+  </section>
+</BaseLayout>

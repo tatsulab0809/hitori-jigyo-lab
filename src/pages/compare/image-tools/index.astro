@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const tools = [
+  {
+    name: "Canva",
+    fit: "記事画像を安定して量産したい人",
+    good: "テンプレート、文字入れ、サイズ展開、図解作成がしやすい。非デザイナーでも形にしやすい。",
+    caution: "テンプレ感が出やすい。素材や構図を変えないと、サイト全体が同じ顔になりやすい。",
+    firstCheck: "商用利用、素材ライセンス、文字の読みやすさ、スマホ表示、テンプレの使い回し感。",
+    article: "/articles/canva-affiliate-article-image-workflow/"
+  },
+  {
+    name: "AI画像生成",
+    fit: "独自のアイキャッチや場面イラストを作りたい人",
+    good: "記事ごとに違う構図や雰囲気を作りやすく、サイトの個性を出しやすい。",
+    caution: "細部の文字、手元、画面、ブランド表現は崩れることがある。確認と選別が必要。",
+    firstCheck: "構図のバリエーション、人物と背景の違い、ロゴなし、文字なし、記事内容との一致。",
+    article: "/articles/ai-eyecatch-image-test/"
+  },
+  {
+    name: "手作業テンプレ運用",
+    fit: "画像制作を小さく管理したい人",
+    good: "ルールを決めれば、毎回迷わず作れる。記事図解や表の見た目を統一しやすい。",
+    caution: "慣れるまで時間がかかる。テンプレが古くなると、全体の印象も古くなる。",
+    firstCheck: "色、余白、見出しサイズ、アイコン、記事内画像の役割、更新しやすさ。",
+    article: "/articles/canva-affiliate-article-image-workflow/"
+  }
+];
+---
+
+<BaseLayout
+  title="画像制作ツール比較 | ひとり事業ラボ"
+  description="Canva、AI画像生成、手作業テンプレ運用を、アフィリエイト記事のアイキャッチ・本文画像制作の視点で比較します。"
+>
+  <section class="page-heading">
+    <p class="eyebrow">Compare Image Tools</p>
+    <h1>画像制作ツール比較</h1>
+    <p>アフィリエイト記事の画像は、きれいなら良いわけではありません。Canva、AI画像生成、手作業テンプレ運用を、独自性、読みやすさ、続けやすさで比較します。</p>
+  </section>
+
+  <section class="section compact">
+    <div class="compare-summary">
+      <article>
+        <p class="panel-label">Stable</p>
+        <h2>安定運用なら Canva</h2>
+        <p>文字入れや図解に強く、記事画像の型を作りやすいです。</p>
+      </article>
+      <article>
+        <p class="panel-label">Original</p>
+        <h2>独自性ならAI画像生成</h2>
+        <p>記事ごとに場面や構図を変えやすく、サイトの世界観を作れます。</p>
+      </article>
+      <article>
+        <p class="panel-label">Control</p>
+        <h2>管理するならテンプレ</h2>
+        <p>図解や注意書きは、手作業テンプレの方が読みやすいこともあります。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>3つの作り方</h2>
+    </div>
+    <div class="comparison-table">
+      {tools.map((tool) => (
+        <article class="comparison-card">
+          <div class="comparison-head">
+            <div>
+              <p class="panel-label">{tool.fit}</p>
+              <h2>{tool.name}</h2>
+            </div>
+          </div>
+          <dl>
+            <div>
+              <dt>良いところ</dt>
+              <dd>{tool.good}</dd>
+            </div>
+            <div>
+              <dt>注意点</dt>
+              <dd>{tool.caution}</dd>
+            </div>
+            <div>
+              <dt>最初に確認</dt>
+              <dd>{tool.firstCheck}</dd>
+            </div>
+          </dl>
+          <div class="button-row">
+            <a class="button" href={tool.article}>関連記事</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="review-format">
+      <p class="panel-label">Image Policy</p>
+      <h2>ひとり事業ラボで見るポイント</h2>
+      <div class="format-grid">
+        <span>記事ごとの構図差</span>
+        <span>スマホで読めるか</span>
+        <span>文字を入れすぎない</span>
+        <span>商用利用の確認</span>
+        <span>ブランドロゴを避ける</span>
+        <span>本文理解に役立つか</span>
+        <span>テンプレ感の抑制</span>
+        <span>制作時間</span>
+      </div>
+      <p>画像は飾りではなく、記事の理解を助ける道具です。とはいえ、毎回同じ構図だと読者より先に運営者が飽きます。そこは地味に大事です。</p>
+    </div>
+  </section>
+</BaseLayout>
