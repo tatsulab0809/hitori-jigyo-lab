@@ -1,5 +1,45 @@
 export const articles = [
   {
+    title: "Google AnalyticsとSearch Consoleを入れる前に決めること",
+    description: "アフィリエイトサイトにGoogle AnalyticsやSearch Consoleを入れる前に、何を見たいのか、どの行動を計測したいのかを整理します。",
+    href: "/articles/analytics-search-console-before-setup/",
+    category: "副業実験ログ",
+    date: "2026-08-27",
+    image: "/images/eyecatch-analytics-search-console-comic.png"
+  },
+  {
+    title: "Notionをひとり事業の作業台にするメリットと限界",
+    description: "Notionを個人事業の作業台として使うなら、記事メモ、案件管理、ツール一覧、収支メモをどう分けるか、そして何を入れすぎないかを整理します。",
+    href: "/articles/notion-solo-business-workspace-limits/",
+    category: "ひとり事業ツール",
+    date: "2026-08-27",
+    image: "/images/eyecatch-notion-workspace-limits-comic.png"
+  },
+  {
+    title: "Canvaでアフィリエイト記事用画像を作るときの注意点",
+    description: "Canvaを使ってアフィリエイト記事のアイキャッチや図解を作るときに、見た目だけでなく独自性、読みやすさ、広告表記、スマホ表示をどう確認するかを整理します。",
+    href: "/articles/canva-affiliate-article-image-workflow/",
+    category: "ひとり事業ツール",
+    date: "2026-08-27",
+    image: "/images/eyecatch-canva-affiliate-images-comic.png"
+  },
+  {
+    title: "Shopifyを小さな商品販売で使う前に確認すること",
+    description: "Shopifyを日本のひとり事業で小さな商品販売に使う前に、商品、価格、決済、配送、在庫、返品をどう確認するかを整理します。",
+    href: "/articles/shopify-small-product-sales-before-start/",
+    category: "ひとり事業ツール",
+    date: "2026-08-27",
+    image: "/images/eyecatch-shopify-small-sales-comic.png"
+  },
+  {
+    title: "HubSpot無料CRMをひとり事業で使うなら何を見るか",
+    description: "HubSpotの無料CRMを、日本の個人事業主が問い合わせ管理や見込み客管理に使うなら、最初にどこを見るべきかを整理します。",
+    href: "/articles/hubspot-free-crm-solo-business/",
+    category: "ひとり事業ツール",
+    date: "2026-08-27",
+    image: "/images/eyecatch-hubspot-free-crm-comic.png"
+  },
+  {
     title: "海外SaaSアフィリエイトを始めて最初にやったこと",
     description: "ひとり事業ラボで海外SaaSアフィリエイトを始めるために、サイト方針、記事追加、申請、却下後の改善、導線整理をどう進めたかを時系列で記録します。",
     href: "/articles/first-steps-overseas-saas-affiliate-log/",

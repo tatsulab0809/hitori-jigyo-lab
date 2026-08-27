@@ -75,19 +75,36 @@ const laterPicks = [
     slug: "hubspot",
     name: "HubSpot",
     timing: "問い合わせ管理が増えてから",
-    note: "無料CRMから入れるので、顧客管理の記事が増えた段階で導線化しやすい。"
+    note: "無料CRMから入れるので、顧客管理の記事が増えた段階で導線化しやすい。",
+    article: "/articles/hubspot-free-crm-solo-business/"
   },
   {
     slug: "shopify",
     name: "Shopify",
     timing: "商品やデジタル販売の実験後",
-    note: "ECの文脈が必要。いきなり薦めるより、小さな販売実験の記事を作ってから。"
+    note: "ECの文脈が必要。いきなり薦めるより、小さな販売実験の記事を作ってから。",
+    article: "/articles/shopify-small-product-sales-before-start/"
+  },
+  {
+    slug: "canva",
+    name: "Canva",
+    timing: "記事画像の型を作る段階",
+    note: "アイキャッチや図解を増やすほど、独自性と読みやすさの基準が必要になる。",
+    article: "/articles/canva-affiliate-article-image-workflow/"
+  },
+  {
+    slug: "notion",
+    name: "Notion",
+    timing: "作業メモが散らかり始めたら",
+    note: "記事案、ツール調査、申請メモをまとめる作業台として使えるが、入れすぎには注意。",
+    article: "/articles/notion-solo-business-workspace-limits/"
   },
   {
     slug: "semrush",
     name: "Semrush",
     timing: "SEO記事が増えてから",
-    note: "高機能だが初心者には重い。検索流入の検証ログとセットで扱う。"
+    note: "高機能だが初心者には重い。検索流入の検証ログとセットで扱う。",
+    article: "/articles/analytics-search-console-before-setup/"
   }
 ];
 
@@ -243,6 +260,7 @@ const statusLabel = {
             <p class="panel-label">{tool.timing}</p>
             <h2>{tool.name}</h2>
             <p>{tool.note}</p>
+            {tool.article && <a class="button" href={tool.article}>レビュー記事を読む</a>}
             {program && <a class="button" href={`/go/${program.slug}/`}>公式ページを確認</a>}
           </article>
         );
