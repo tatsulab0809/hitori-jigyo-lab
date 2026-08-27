@@ -1,5 +1,45 @@
 export const articles = [
   {
+    title: "PartnerStackに日本の個人サイトで申請するとき何を書くか",
+    description: "PartnerStackに日本の個人サイトで申請する前に、媒体説明、販売チャネル、LinkedIn、トラフィック、報酬希望をどう整理するかを実体験ベースでまとめます。",
+    href: "/articles/partnerstack-application-japan-guide/",
+    category: "副業実験ログ",
+    date: "2026-08-28",
+    image: "/images/eyecatch-partnerstack-application-japan-seo.png"
+  },
+  {
+    title: "impact.comで却下された理由を個人サイト目線で考える",
+    description: "impact.comのメディアパートナー申請で却下されたとき、日本の個人サイトが見直したい媒体説明、実績、SNS、記事内容、再申請タイミングを整理します。",
+    href: "/articles/impact-declined-reasons-guide/",
+    category: "副業実験ログ",
+    date: "2026-08-28",
+    image: "/images/eyecatch-impact-declined-reasons-seo.png"
+  },
+  {
+    title: "海外SaaSが解約できないと困る前に見るチェックポイント",
+    description: "海外SaaSが解約できない、キャンセル場所が分からない、無料トライアル後の課金が不安という人向けに、契約前と契約後に確認するポイントを整理します。",
+    href: "/articles/overseas-saas-cancel-problem-guide/",
+    category: "ひとり事業ツール",
+    date: "2026-08-28",
+    image: "/images/eyecatch-overseas-saas-cancel-problem-seo.png"
+  },
+  {
+    title: "Webflowは日本の個人事業主に向いているかを最初に見る",
+    description: "Webflowを日本の個人事業主が使う前に、料金、日本語表示、更新性、SEO、WordPressとの違い、アフィリエイトサイトとの相性を整理します。",
+    href: "/articles/webflow-japan-sole-proprietor-guide/",
+    category: "ひとり事業ツール",
+    date: "2026-08-28",
+    image: "/images/eyecatch-webflow-japan-sole-proprietor-seo.png"
+  },
+  {
+    title: "Kitとbeehiivは日本語ニュースレターでどちらが始めやすいか",
+    description: "Kitとbeehiivを日本語ニュースレターで使う前に、登録フォーム、配信画面、日本語表示、無料プラン、ひとり事業での続けやすさを比較します。",
+    href: "/articles/kit-beehiiv-japanese-newsletter-guide/",
+    category: "ひとり事業ツール",
+    date: "2026-08-28",
+    image: "/images/eyecatch-kit-beehiiv-japanese-seo.png"
+  },
+  {
     title: "Webflowアフィリエイトに申請する前に、サイト側で整えておきたいこと",
     description: "Webflowを次の直申請候補として見る前に、ひとり事業ラボ側でどんな記事、比較ページ、導線、媒体説明を整えておくべきかを実験ログとして整理します。",
     href: "/articles/webflow-affiliate-application-readiness/",
