@@ -1,5 +1,13 @@
 export const articles = [
   {
+    title: "PartnerStack審査に落ちたので、LinkedInプロフィールを媒体運営者向けに直した",
+    description: "PartnerStack申請でLinkedInプロフィールとのズレがありそうだったので、ひとり事業ラボの運営者としてプロフィール、職歴、媒体説明を整えた実験ログです。",
+    href: "/articles/partnerstack-linkedin-profile-improvement/",
+    category: "副業実験ログ",
+    date: "2026-08-27",
+    image: "/images/eyecatch-partnerstack-linkedin-profile-improvement-comic.png"
+  },
+  {
     title: "Google AnalyticsとSearch Consoleを入れる前に決めること",
     description: "アフィリエイトサイトにGoogle AnalyticsやSearch Consoleを入れる前に、何を見たいのか、どの行動を計測したいのかを整理します。",
     href: "/articles/analytics-search-console-before-setup/",
