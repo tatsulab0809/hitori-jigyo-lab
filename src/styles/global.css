@@ -1045,6 +1045,50 @@ h3 {
   height: auto;
 }
 
+.article-next-links {
+  margin-top: 48px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: #fbfaf6;
+}
+
+.article-next-links h2 {
+  margin-top: 0;
+  border-left: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--navy);
+}
+
+.article-next-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.article-next-grid a {
+  display: grid;
+  gap: 8px;
+  min-height: 118px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.article-next-grid span {
+  color: var(--gold-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.article-next-grid strong {
+  line-height: 1.5;
+}
+
 .article-table {
   width: 100%;
   margin: 34px 0;
@@ -1289,7 +1333,8 @@ h3 {
   .operator-principles,
   .trust-summary,
   .policy-grid,
-  .review-score-grid {
+  .review-score-grid,
+  .article-next-grid {
     grid-template-columns: 1fr;
   }
 

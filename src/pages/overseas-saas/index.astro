@@ -1,5 +1,55 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const readingRoutes = [
+  {
+    label: "Step 01",
+    title: "海外SaaSを使う前の基本確認",
+    description: "料金、支払い、解約、日本語対応、サポートを先に確認します。",
+    href: "/articles/overseas-saas-before-use/"
+  },
+  {
+    label: "Step 02",
+    title: "支払い・解約チェックリスト",
+    description: "無料トライアルやドル建て課金で迷わないための確認項目です。",
+    href: "/articles/overseas-saas-payment-cancel-checklist/"
+  },
+  {
+    label: "Step 03",
+    title: "ASP申請前チェック",
+    description: "PartnerStackやimpact.comに出す前に、媒体説明と導線を整えます。",
+    href: "/articles/partnerstack-impact-application-checklist/"
+  },
+  {
+    label: "Step 04",
+    title: "申請ログと改善記録",
+    description: "申請、却下、LinkedIn改善、サイト強化を実験ログとして残します。",
+    href: "/articles/partnerstack-linkedin-profile-improvement/"
+  }
+];
+
+const reviewRoutes = [
+  {
+    title: "Web制作",
+    description: "Webflow、WordPress、Astroを比較し、小さな事業サイトの作り方を考えます。",
+    href: "/articles/webflow-wordpress-astro-comparison/"
+  },
+  {
+    title: "ニュースレター",
+    description: "Kitとbeehiivを中心に、日本語で読者リストを作る方法を整理します。",
+    href: "/articles/kit-beehiiv-starting-comparison/"
+  },
+  {
+    title: "CRM",
+    description: "HubSpot無料CRMを、問い合わせ管理や見込み客管理の視点で確認します。",
+    href: "/articles/hubspot-free-crm-solo-business/"
+  },
+  {
+    title: "EC",
+    description: "Shopifyを小さな商品販売で使う前に、商品、決済、配送、返品を確認します。",
+    href: "/articles/shopify-small-product-sales-before-start/"
+  }
+];
 ---
 
 <BaseLayout
@@ -41,6 +91,22 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     </div>
   </section>
 
+  <section class="section compact">
+    <div class="section-title">
+      <h2>まず読む順番</h2>
+    </div>
+    <div class="route-grid">
+      {readingRoutes.map((route) => (
+        <a class="tool-route-card" href={route.href}>
+          <p class="panel-label">{route.label}</p>
+          <h2>{route.title}</h2>
+          <p>{route.description}</p>
+          <span>読む</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
   <section class="section">
     <div class="review-format">
       <p class="panel-label">Review Format</p>
@@ -64,13 +130,32 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
   </section>
 
   <section class="section compact">
+    <div class="section-title">
+      <h2>レビュー記事の入口</h2>
+    </div>
+    <div class="tool-route-grid">
+      {reviewRoutes.map((route) => (
+        <a class="tool-route-card" href={route.href}>
+          <p class="panel-label">Review</p>
+          <h2>{route.title}</h2>
+          <p>{route.description}</p>
+          <span>レビューを読む</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section compact">
     <div class="lab-panel">
       <div>
         <p class="panel-label">Program Status</p>
         <h2>申請予定の海外SaaSプログラム</h2>
         <p>Webflow、Shopify、beehiiv、Kit、HubSpotなどを、承認状況と確認日つきで管理します。</p>
       </div>
-      <a class="button primary" href="/affiliate-programs/">一覧を見る</a>
+      <p class="button-row">
+        <a class="button primary" href="/affiliate-programs/">一覧を見る</a>
+        <a class="button" href="/for-partners/">For Partners</a>
+      </p>
     </div>
   </section>
 </BaseLayout>

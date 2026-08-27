@@ -108,6 +108,39 @@ const laterPicks = [
   }
 ];
 
+const useCaseGroups = [
+  {
+    title: "サイト制作",
+    description: "サービス紹介、記事メディア、LPを作る道具。Webflow、WordPress、Astroを比較します。",
+    href: "#website-picks"
+  },
+  {
+    title: "ニュースレター",
+    description: "読者リストを作る道具。Kit、beehiiv、Substackを用途別に見ます。",
+    href: "#newsletter-picks"
+  },
+  {
+    title: "CRM・顧客管理",
+    description: "問い合わせや見込み客を整理する道具。まずはHubSpot無料CRMから確認します。",
+    href: "/articles/hubspot-free-crm-solo-business/"
+  },
+  {
+    title: "画像制作",
+    description: "記事のアイキャッチや図解を作る道具。CanvaとAI画像生成の使い分けを考えます。",
+    href: "/articles/canva-affiliate-article-image-workflow/"
+  },
+  {
+    title: "アクセス解析",
+    description: "Google AnalyticsとSearch Consoleを入れる前に、何を見たいかを決めます。",
+    href: "/articles/analytics-search-console-before-setup/"
+  },
+  {
+    title: "小さなEC",
+    description: "Shopifyなどで商品販売を始める前に、商品、配送、返品、決済を確認します。",
+    href: "/articles/shopify-small-product-sales-before-start/"
+  }
+];
+
 const getProgram = (slug) => programBySlug[slug];
 
 const statusLabel = {
@@ -145,6 +178,22 @@ const statusLabel = {
         <p>海外SaaSは承認状況や条件が変わりやすいので、記事ごとに直書きせず、紹介プログラム一覧と出口ページで管理します。</p>
       </div>
       <a class="button primary" href="/affiliate-programs/">紹介プログラム一覧</a>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>用途別に探す</h2>
+    </div>
+    <div class="route-grid">
+      {useCaseGroups.map((group) => (
+        <a class="tool-route-card" href={group.href}>
+          <p class="panel-label">Use Case</p>
+          <h2>{group.title}</h2>
+          <p>{group.description}</p>
+          <span>見る</span>
+        </a>
+      ))}
     </div>
   </section>
 

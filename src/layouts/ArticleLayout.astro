@@ -20,6 +20,24 @@ const { title, description, category, date, heroImage, heroImageAlt } = Astro.pr
       )}
       <div class="article-body">
         <slot />
+        <section class="article-next-links">
+          <p class="panel-label">Next Reading</p>
+          <h2>次に読むなら</h2>
+          <div class="article-next-grid">
+            <a href="/tools/">
+              <span>Tools</span>
+              <strong>用途別ツール比較を見る</strong>
+            </a>
+            <a href="/overseas-saas/">
+              <span>Overseas SaaS</span>
+              <strong>海外SaaS入門ハブへ</strong>
+            </a>
+            <a href="/editorial-policy/">
+              <span>Policy</span>
+              <strong>編集方針を確認する</strong>
+            </a>
+          </div>
+        </section>
       </div>
     </article>
     <aside class="article-sidebar">
