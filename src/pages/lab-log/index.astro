@@ -31,6 +31,34 @@ const timeline = [
     date: "2026-08-27",
     title: "媒体の信頼ページを追加",
     description: "運営者情報、編集方針、レビュー基準、アフィリエイト表記、英語媒体説明ページを整備。"
+  },
+  {
+    date: "2026-08-27",
+    title: "Xアカウントを整備",
+    description: "@hitorijigyolabのプロフィール、サイトリンク、アイコン、初投稿、固定ポストを設定。日々の公開実験ログとして運用開始。"
+  },
+  {
+    date: "2026-08-27",
+    title: "再申請前の媒体導線を強化",
+    description: "トップページからX、実験ログ、メディアキットへ進める導線を追加し、審査担当が運営実態を確認しやすい構成へ更新。"
+  }
+];
+
+const currentSignals = [
+  {
+    label: "Publishing",
+    title: "長文記事を継続追加",
+    description: "AI、海外SaaS、Web制作、CRM、ニュースレター、解析などの実務記事を増やしています。"
+  },
+  {
+    label: "Social",
+    title: "Xで日々の実験を発信",
+    description: "完成した成功談ではなく、申請、改善、失敗、次の一手を短いログとして投稿します。"
+  },
+  {
+    label: "Review",
+    title: "海外ASP再申請に向けて整備",
+    description: "媒体概要、レビュー基準、開示、運営者プロフィール、申請用英文をそろえています。"
   }
 ];
 ---
@@ -73,6 +101,21 @@ const timeline = [
 
   <section class="section compact">
     <div class="section-title">
+      <h2>現在の運営シグナル</h2>
+    </div>
+    <div class="trust-summary">
+      {currentSignals.map((signal) => (
+        <article>
+          <p class="panel-label">{signal.label}</p>
+          <h2>{signal.title}</h2>
+          <p>{signal.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
       <h2>時系列ログ</h2>
     </div>
     <div class="timeline-list">
@@ -105,6 +148,22 @@ const timeline = [
         <h2>直す</h2>
         <p>トップ、ツールページ、運営者情報、導線を少しずつ改善します。</p>
       </article>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="cta-box">
+      <p class="panel-label">Live Channel</p>
+      <h2>Xでも実験ログを発信しています</h2>
+      <p>
+        サイト側には整理した記事を、X側には日々の短い作業ログを残します。
+        申請に落ちたことも、プロフィールを直したことも、次の改善に使える材料として公開します。
+      </p>
+      <p class="button-row">
+        <a class="button primary" href="https://x.com/hitorijigyolab">Xを見る</a>
+        <a class="button" href="/media-kit/">申請用メディアキットを見る</a>
+        <a class="button" href="/for-partners/">For Partnersを見る</a>
+      </p>
     </div>
   </section>
 </BaseLayout>

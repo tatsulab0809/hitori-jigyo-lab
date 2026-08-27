@@ -91,6 +91,30 @@ const siteStats = [
     description: "PartnerStackとimpact.comの申請・改善過程を公開記録"
   }
 ];
+
+const liveUpdates = [
+  {
+    label: "X",
+    title: "X運用を開始",
+    description: "@hitorijigyolabで、海外SaaSアフィリエイトの申請・改善・記事追加を日々のログとして発信します。",
+    href: "https://x.com/hitorijigyolab",
+    cta: "Xを見る"
+  },
+  {
+    label: "Log",
+    title: "申請と改善を公開記録",
+    description: "PartnerStack、impact.com、LinkedIn改善、媒体説明の整備を時系列で残しています。",
+    href: "/lab-log/",
+    cta: "実験ログを見る"
+  },
+  {
+    label: "Review",
+    title: "再申請前の土台づくり",
+    description: "記事、比較ページ、レビュー基準、メディアキットを増やして、審査されやすい媒体に育てています。",
+    href: "/media-kit/",
+    cta: "申請資料を見る"
+  }
+];
 ---
 
 <BaseLayout>
@@ -114,6 +138,22 @@ const siteStats = [
         </p>
       </div>
       <a class="button primary" href="/overseas-saas/">海外SaaS入門へ</a>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>進行中の公開実験</h2>
+    </div>
+    <div class="live-update-grid">
+      {liveUpdates.map((item) => (
+        <a class="live-update-card" href={item.href}>
+          <p class="panel-label">{item.label}</p>
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+          <span>{item.cta}</span>
+        </a>
+      ))}
     </div>
   </section>
 
