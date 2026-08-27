@@ -1,0 +1,144 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { affiliatePrograms } from "../../../data/affiliate/programs.js";
+
+const programBySlug = Object.fromEntries(affiliatePrograms.map((program) => [program.slug, program]));
+
+const tools = [
+  {
+    slug: "webflow",
+    name: "Webflow",
+    fit: "見た目の整ったサービスサイトを作りたい人",
+    good: "デザイン性、LP、サービス紹介、ポートフォリオに強い。ノーコード寄りで見た目を作りやすい。",
+    caution: "英語UI中心。記事メディアを大量に育てるなら、運用設計を先に確認したい。",
+    firstCheck: "無料操作、CMS、日本語表示、公開方法、料金、アフィリエイト条件。",
+    article: "/articles/webflow-for-japanese-solo-business/"
+  },
+  {
+    slug: "wordpress",
+    name: "WordPress",
+    fit: "記事を長く増やすブログ・地域サイトを作りたい人",
+    good: "日本語情報、テーマ、プラグイン、外注先が多く、記事運用に強い。",
+    caution: "サーバー、テーマ、更新、セキュリティの管理が必要。小さく始めるには選択肢が多すぎることもある。",
+    firstCheck: "サーバー費用、テーマ、更新担当、バックアップ、表示速度、記事導線。",
+    article: "/articles/wordpress-vs-astro/"
+  },
+  {
+    slug: "astro",
+    name: "Astro",
+    fit: "軽い静的サイトをCodexと育てたい人",
+    good: "表示が軽く、GitHubやCloudflare Pagesと相性が良い。ひとり事業ラボのような実験サイトに向く。",
+    caution: "制作や更新には技術理解が必要。管理画面で直すタイプの運用ではない。",
+    firstCheck: "更新方法、GitHub管理、ビルド、画像配置、記事追加の作業負荷。",
+    article: "/articles/build-affiliate-site-with-codex/"
+  }
+];
+
+const statusLabel = {
+  to_apply: "申請予定",
+  submitted: "審査中",
+  declined: "見送り中",
+  approved: "承認済み"
+};
+---
+
+<BaseLayout
+  title="Web制作ツール比較 | ひとり事業ラボ"
+  description="Webflow、WordPress、Astroを、ひとり事業のホームページ、記事メディア、アフィリエイトサイト運営の目線で比較します。"
+>
+  <section class="page-heading">
+    <p class="eyebrow">Compare Website Tools</p>
+    <h1>Web制作ツール比較</h1>
+    <p>Webflow、WordPress、Astroを、ひとり事業サイトや記事メディアを作る目線で比較します。見た目、更新性、費用、自由度、アフィリエイト導線の作りやすさを分けて見ます。</p>
+  </section>
+
+  <section class="section compact">
+    <div class="compare-summary">
+      <article>
+        <p class="panel-label">Design</p>
+        <h2>見た目重視なら Webflow</h2>
+        <p>サービス紹介やLPをきれいに見せたいときに候補。英語UIと料金は事前確認します。</p>
+      </article>
+      <article>
+        <p class="panel-label">Content</p>
+        <h2>記事運用なら WordPress</h2>
+        <p>日本語情報と運用ノウハウが多く、ブログや地域サイトに強いです。</p>
+      </article>
+      <article>
+        <p class="panel-label">Static</p>
+        <h2>軽く育てるなら Astro</h2>
+        <p>Codexと一緒に作る静的サイトとして強い。ただし更新には少し技術の段取りが必要です。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>3ツール比較</h2>
+    </div>
+    <div class="comparison-table">
+      {tools.map((tool) => {
+        const program = programBySlug[tool.slug];
+        return (
+          <article class="comparison-card">
+            <div class="comparison-head">
+              <div>
+                <p class="panel-label">{tool.fit}</p>
+                <h2>{tool.name}</h2>
+              </div>
+              {program && <span class={`status-pill ${program.status}`}>{statusLabel[program.status] ?? program.status}</span>}
+            </div>
+            <dl>
+              <div>
+                <dt>良いところ</dt>
+                <dd>{tool.good}</dd>
+              </div>
+              <div>
+                <dt>注意点</dt>
+                <dd>{tool.caution}</dd>
+              </div>
+              <div>
+                <dt>最初に確認</dt>
+                <dd>{tool.firstCheck}</dd>
+              </div>
+            </dl>
+            <div class="button-row">
+              <a class="button" href={tool.article}>関連記事</a>
+              {program && <a class="button primary" href={`/go/${program.slug}/`}>公式ページへ</a>}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="review-format">
+      <p class="panel-label">How To Choose</p>
+      <h2>選ぶ前に決めること</h2>
+      <div class="format-grid">
+        <span>記事を増やすか</span>
+        <span>見た目を優先するか</span>
+        <span>管理画面が必要か</span>
+        <span>自分で更新するか</span>
+        <span>外注しやすいか</span>
+        <span>表示速度を重視するか</span>
+        <span>アフィリエイト導線</span>
+        <span>長期メンテナンス</span>
+      </div>
+      <p>サイト制作ツールは、作る瞬間よりも更新する日々で差が出ます。最初のテンションだけで選ぶと、未来の自分が静かに眉間を押さえます。</p>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="cta-box">
+      <p class="panel-label">Next</p>
+      <h2>実際の記事で詳しく見る</h2>
+      <p>Webflow、WordPress、Astroの比較記事と、Codexでサイトを作った記録へ進めます。</p>
+      <p>
+        <a class="button primary" href="/articles/webflow-wordpress-astro-comparison/">比較記事を読む</a>
+        <a class="button" href="/articles/codex-site-launch-record/">Codex公開ログへ</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

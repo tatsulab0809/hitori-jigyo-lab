@@ -1,0 +1,144 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { affiliatePrograms } from "../../../data/affiliate/programs.js";
+
+const programBySlug = Object.fromEntries(affiliatePrograms.map((program) => [program.slug, program]));
+
+const tools = [
+  {
+    slug: "kit",
+    name: "Kit",
+    fit: "少人数の濃い読者リストを育てたい人",
+    good: "フォーム、タグ、ステップ配信、個人発信から販売導線まで広げやすい。",
+    caution: "英語UI前提。最初は機能を絞らないと、設定画面で少し長居する。",
+    firstCheck: "登録フォーム、日本語メール、解除リンク、無料範囲、配信テスト。",
+    article: "/articles/kit-newsletter-before-start/"
+  },
+  {
+    slug: "beehiiv",
+    name: "beehiiv",
+    fit: "メディア型ニュースレターを育てたい人",
+    good: "定期配信、ニュースレター成長、スポンサー文脈を見たいときに候補になる。",
+    caution: "日本語フォームや表示、無料プランの範囲、パートナー条件を事前に確認したい。",
+    firstCheck: "日本語表示、登録フォーム、配信画面、無料範囲、ブランド検索広告ルール。",
+    article: "/articles/beehiiv-japanese-newsletter-test/"
+  },
+  {
+    slug: "substack",
+    name: "Substack",
+    fit: "文章中心でまず配信を始めたい人",
+    good: "書いて送るまでの心理的ハードルが低く、文章メディアとして始めやすい。",
+    caution: "細かな導線設計やアフィリエイト管理は、Kitやbeehiivより別設計になりやすい。",
+    firstCheck: "日本語投稿、登録ページ、独自ドメイン、収益化導線、読者管理の自由度。",
+    article: "/articles/beehiiv-vs-kit-japanese-solo-business/"
+  }
+];
+
+const statusLabel = {
+  to_apply: "申請予定",
+  submitted: "審査中",
+  declined: "見送り中",
+  approved: "承認済み"
+};
+---
+
+<BaseLayout
+  title="ニュースレターツール比較 | ひとり事業ラボ"
+  description="Kit、beehiiv、Substackを、ひとり事業のニュースレター運用、読者リスト作り、アフィリエイト導線の目線で比較します。"
+>
+  <section class="page-heading">
+    <p class="eyebrow">Compare Newsletter Tools</p>
+    <h1>ニュースレターツール比較</h1>
+    <p>Kit、beehiiv、Substackを、ひとり事業ラボのニュースレター創刊準備とアフィリエイト導線の視点で比較します。最初に見るのは、機能数より「続けやすさ」と「読者に説明しやすいか」です。</p>
+  </section>
+
+  <section class="section compact">
+    <div class="compare-summary">
+      <article>
+        <p class="panel-label">First Pick</p>
+        <h2>小さく始めるなら Kit</h2>
+        <p>少人数の濃い読者リスト、フォーム、配信、将来の販売導線まで見たいなら最初の候補です。</p>
+      </article>
+      <article>
+        <p class="panel-label">Media Pick</p>
+        <h2>メディア型なら beehiiv</h2>
+        <p>ニュースレター自体をメディアとして育てたい場合に候補。ただし日本語表示は事前確認します。</p>
+      </article>
+      <article>
+        <p class="panel-label">Simple Pick</p>
+        <h2>まず書くなら Substack</h2>
+        <p>文章中心で始めやすい一方、細かな収益導線やツール比較導線は別途考えます。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>3ツール比較</h2>
+    </div>
+    <div class="comparison-table">
+      {tools.map((tool) => {
+        const program = programBySlug[tool.slug];
+        return (
+          <article class="comparison-card">
+            <div class="comparison-head">
+              <div>
+                <p class="panel-label">{tool.fit}</p>
+                <h2>{tool.name}</h2>
+              </div>
+              {program && <span class={`status-pill ${program.status}`}>{statusLabel[program.status] ?? program.status}</span>}
+            </div>
+            <dl>
+              <div>
+                <dt>良いところ</dt>
+                <dd>{tool.good}</dd>
+              </div>
+              <div>
+                <dt>注意点</dt>
+                <dd>{tool.caution}</dd>
+              </div>
+              <div>
+                <dt>最初に確認</dt>
+                <dd>{tool.firstCheck}</dd>
+              </div>
+            </dl>
+            <div class="button-row">
+              <a class="button" href={tool.article}>関連記事</a>
+              {program && <a class="button primary" href={`/go/${program.slug}/`}>公式ページへ</a>}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="review-format">
+      <p class="panel-label">How To Choose</p>
+      <h2>選ぶ前に決めること</h2>
+      <div class="format-grid">
+        <span>月1回か週1回か</span>
+        <span>読者リストを資産にするか</span>
+        <span>販売導線まで作るか</span>
+        <span>日本語フォームを確認するか</span>
+        <span>無料プランで試す範囲</span>
+        <span>解除リンクと表記</span>
+        <span>紹介リンクの扱い</span>
+        <span>記事との回遊導線</span>
+      </div>
+      <p>最初から全部決めなくても大丈夫です。ただし「何を配るか」が決まる前に高機能ツールを選ぶと、配信より設定が主役になります。設定画面は親切そうな顔で時間を食べます。</p>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="cta-box">
+      <p class="panel-label">Next</p>
+      <h2>ひとり事業ラボ通信の準備を見る</h2>
+      <p>ニュースレターを始める理由、創刊前に決めたこと、配信方針をまとめています。</p>
+      <p>
+        <a class="button primary" href="/newsletter/">ニュースレター準備ページへ</a>
+        <a class="button" href="/articles/newsletter-launch-before-decide/">創刊準備ログへ</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

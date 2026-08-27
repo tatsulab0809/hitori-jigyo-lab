@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const compareRoutes = [
+  {
+    label: "Newsletter",
+    title: "ニュースレターツール比較",
+    description: "Kit、beehiiv、Substackを、ひとり事業の読者リストづくり目線で比較します。",
+    href: "/compare/newsletter-tools/"
+  },
+  {
+    label: "Website",
+    title: "Web制作ツール比較",
+    description: "Webflow、WordPress、Astroを、小さな事業サイトと記事メディアの目線で比較します。",
+    href: "/compare/website-tools/"
+  },
+  {
+    label: "Next",
+    title: "CRM・画像・解析は次に固定化",
+    description: "HubSpot、Canva、Google Analytics / Search Console は個別記事を増やしながら比較ページ化します。",
+    href: "/tools/"
+  }
+];
+---
+
+<BaseLayout
+  title="比較ページ一覧 | ひとり事業ラボ"
+  description="ひとり事業ラボの固定比較ページ一覧です。ニュースレター、Web制作、CRM、画像制作、アクセス解析などを用途別に整理します。"
+>
+  <section class="page-heading">
+    <p class="eyebrow">Compare</p>
+    <h1>比較ページ一覧</h1>
+    <p>記事を読み切る前に、まず選び方の全体像をつかむための固定比較ページです。ランキングではなく、ひとり事業で使う場面ごとに整理します。</p>
+  </section>
+
+  <section class="section compact">
+    <div class="route-grid">
+      {compareRoutes.map((route) => (
+        <a class="tool-route-card" href={route.href}>
+          <p class="panel-label">{route.label}</p>
+          <h2>{route.title}</h2>
+          <p>{route.description}</p>
+          <span>比較を見る</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="cta-box">
+      <p class="panel-label">Why Compare?</p>
+      <h2>おすすめ順位より、用途との相性を先に見る</h2>
+      <p>ひとり事業では、機能が多いツールより、今の作業に合うツールの方が長く使えます。比較ページでは、無料確認、日本語運用、料金確認、アフィリエイト紹介時の注意点までまとめます。</p>
+      <p>
+        <a class="button primary" href="/tools/">ツール比較ハブへ</a>
+        <a class="button" href="/review-policy/">レビュー基準を見る</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
