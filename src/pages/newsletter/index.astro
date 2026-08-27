@@ -1,5 +1,30 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const issuePlan = [
+  {
+    label: "01",
+    title: "今月試したツール",
+    description: "AI、SaaS、Web制作、CRM、ニュースレター、アクセス解析から、実際に見たことを短く整理します。"
+  },
+  {
+    label: "02",
+    title: "申請と導線のログ",
+    description: "PartnerStackやimpact.comのような海外ASP申請、却下、改善、再申請準備を隠さず残します。"
+  },
+  {
+    label: "03",
+    title: "次にやる小さな実験",
+    description: "大きな成功談ではなく、次の1週間で試せる小さな改善を共有します。"
+  }
+];
+
+const readerPromises = [
+  "売り込みだけの配信にしない",
+  "料金・解約・日本語運用の確認を入れる",
+  "うまくいかなかった実験も残す",
+  "月1回を基本に、無理に増やさない"
+];
 ---
 
 <BaseLayout
@@ -11,7 +36,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     <h1>ひとり事業ラボ通信</h1>
     <p>
       海外SaaS、AI、Web制作、アフィリエイト申請、サイト改善の実験メモを、
-      月に数回まとめて届けるニュースレターを準備しています。
+      月1回を基本にまとめて届けるニュースレターを準備しています。
     </p>
   </section>
 
@@ -22,51 +47,61 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
   </section>
 
   <section class="section compact">
-    <div class="lab-panel">
+    <div class="newsletter-signup-panel">
       <div>
         <p class="panel-label">Preparing</p>
-        <h2>登録フォームは準備中です</h2>
+        <h2>創刊準備中です</h2>
         <p>
-          まずは配信テーマ、頻度、読者に約束することを固めています。
-          フォームだけ先に作って空っぽの配信箱を磨くより、ちゃんと届ける中身から整えます。
+          まずは配信テーマ、頻度、読者に約束することを固めています。フォームだけ先に作って空っぽの配信箱を磨くより、ちゃんと届ける中身から整えます。
         </p>
+        <p>配信サービスは Kit / beehiiv を候補にして、接続後にこのページから登録できるようにします。</p>
       </div>
-      <a class="button primary" href="/articles/why-start-newsletter-for-solo-business-lab/">始める理由を読む</a>
+      <div class="signup-preview" aria-label="ニュースレター登録準備中">
+        <label for="newsletter-preview-email">メールアドレス</label>
+        <div>
+          <input id="newsletter-preview-email" type="email" placeholder="準備中: 配信開始時に受付予定" disabled />
+          <button type="button" disabled>準備中</button>
+        </div>
+        <p>現在は受付前です。配信内容が固まり次第、登録フォームを接続します。</p>
+      </div>
     </div>
   </section>
 
   <section class="section compact">
     <div class="section-title">
-      <h2>届ける予定の内容</h2>
+      <h2>1通の基本構成</h2>
     </div>
     <div class="decision-grid">
-      <article class="decision-card">
-        <p class="panel-label">SaaS Tests</p>
-        <h2>海外SaaS実験メモ</h2>
-        <p>Webflow、Kit、beehiiv、HubSpotなどを、日本のひとり事業で使うならどこを見るかを短く整理します。</p>
-      </article>
-      <article class="decision-card">
-        <p class="panel-label">Site Notes</p>
-        <h2>サイト改善ログ</h2>
-        <p>記事追加、導線改善、画像方針、トップページ改善など、母艦を育てる作業を記録します。</p>
-      </article>
-      <article class="decision-card">
-        <p class="panel-label">Affiliate Logs</p>
-        <h2>申請と収益導線</h2>
-        <p>PartnerStack申請、impact.com却下、次の申請準備など、成功も失敗も含めて共有します。</p>
-      </article>
+      {issuePlan.map((item) => (
+        <article class="decision-card">
+          <p class="panel-label">{item.label}</p>
+          <h2>{item.title}</h2>
+          <p>{item.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="review-format">
+      <p class="panel-label">Promise</p>
+      <h2>配信で約束すること</h2>
+      <div class="format-grid">
+        {readerPromises.map((promise) => <span>{promise}</span>)}
+      </div>
+      <p>便利なツールだけを勢いで紹介するのではなく、料金、解約、日本語運用、実際に使う場面まで見ます。読者が登録前に落ち着いて判断できるメモにします。</p>
     </div>
   </section>
 
   <section class="section compact">
     <div class="cta-box">
-      <p class="panel-label">Policy</p>
-      <h2>配信で大事にすること</h2>
+      <p class="panel-label">Launch Prep</p>
+      <h2>創刊前に決めたこと</h2>
+      <p>配信頻度、読者像、扱うテーマ、売り込み過多にしない方針を実験ログとしてまとめました。</p>
       <p>
-        便利なツールだけを勢いで紹介するのではなく、料金、解約、日本語運用、実際に使う場面まで見ます。
-        読者が登録前に落ち着いて判断できるメモにします。
+        <a class="button primary" href="/articles/newsletter-launch-before-decide/">創刊準備ログを読む</a>
+        <a class="button" href="/articles/why-start-newsletter-for-solo-business-lab/">始める理由を読む</a>
       </p>
-      <p><a class="button" href="/operator/">運営者情報を見る</a></p>
     </div>
   </section>
 </BaseLayout>

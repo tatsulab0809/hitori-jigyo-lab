@@ -1,5 +1,13 @@
 export const articles = [
   {
+    title: "ひとり事業ラボのニュースレター創刊前に決めたこと",
+    description: "ニュースレターを始める前に、配信頻度、読者像、扱うテーマ、売り込み過多にしない方針、Kitとbeehiivの候補比較を整理します。",
+    href: "/articles/newsletter-launch-before-decide/",
+    category: "副業実験ログ",
+    date: "2026-08-27",
+    image: "/images/eyecatch-newsletter-launch-prep-comic.png"
+  },
+  {
     title: "PartnerStack審査に落ちたので、LinkedInプロフィールを媒体運営者向けに直した",
     description: "PartnerStack申請でLinkedInプロフィールとのズレがありそうだったので、ひとり事業ラボの運営者としてプロフィール、職歴、媒体説明を整えた実験ログです。",
     href: "/articles/partnerstack-linkedin-profile-improvement/",

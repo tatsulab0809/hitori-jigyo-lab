@@ -537,7 +537,8 @@ h3 {
 .lab-panel,
 .checklist-panel,
 .review-format,
-.cta-box {
+.cta-box,
+.newsletter-signup-panel {
   display: grid;
   gap: 22px;
   padding: 34px;
@@ -545,7 +546,8 @@ h3 {
   background: var(--paper);
 }
 
-.lab-panel {
+.lab-panel,
+.newsletter-signup-panel {
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
 }
@@ -553,7 +555,8 @@ h3 {
 .lab-panel h2,
 .checklist-panel h2,
 .review-format h2,
-.cta-box h2 {
+.cta-box h2,
+.newsletter-signup-panel h2 {
   color: var(--navy);
 }
 
@@ -1062,7 +1065,7 @@ h3 {
 
 .article-next-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -1087,6 +1090,53 @@ h3 {
 
 .article-next-grid strong {
   line-height: 1.5;
+}
+
+.signup-preview {
+  display: grid;
+  gap: 10px;
+  min-width: min(420px, 100%);
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: #fbfaf6;
+}
+
+.signup-preview label {
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.signup-preview div {
+  display: flex;
+  gap: 8px;
+}
+
+.signup-preview input,
+.signup-preview button {
+  min-height: 46px;
+  border: 1px solid var(--line);
+  font: inherit;
+}
+
+.signup-preview input {
+  min-width: 0;
+  flex: 1;
+  padding: 0 14px;
+  background: #ffffff;
+  color: var(--muted);
+}
+
+.signup-preview button {
+  padding: 0 18px;
+  background: var(--navy);
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.signup-preview p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .article-table {
@@ -1318,6 +1368,7 @@ h3 {
   .article-grid,
   .split,
   .lab-panel,
+  .newsletter-signup-panel,
   .starter-reading-grid,
   .conversion-band,
   .route-grid,
@@ -1336,6 +1387,10 @@ h3 {
   .review-score-grid,
   .article-next-grid {
     grid-template-columns: 1fr;
+  }
+
+  .signup-preview div {
+    display: grid;
   }
 
   .intro {
