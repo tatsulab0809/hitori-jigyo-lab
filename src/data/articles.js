@@ -1,5 +1,13 @@
 export const articles = [
   {
+    title: "Webflowアフィリエイトに申請する前に、サイト側で整えておきたいこと",
+    description: "Webflowを次の直申請候補として見る前に、ひとり事業ラボ側でどんな記事、比較ページ、導線、媒体説明を整えておくべきかを実験ログとして整理します。",
+    href: "/articles/webflow-affiliate-application-readiness/",
+    category: "副業実験ログ",
+    date: "2026-08-27",
+    image: "/images/eyecatch-webflow-application-readiness-comic.png"
+  },
+  {
     title: "ひとり事業ラボのニュースレター創刊前に決めたこと",
     description: "ニュースレターを始める前に、配信頻度、読者像、扱うテーマ、売り込み過多にしない方針、Kitとbeehiivの候補比較を整理します。",
     href: "/articles/newsletter-launch-before-decide/",

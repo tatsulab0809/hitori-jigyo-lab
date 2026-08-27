@@ -9,6 +9,30 @@ const priorityPrograms = affiliatePrograms
 const networks = affiliatePrograms
   .filter((program) => program.type === "network")
   .sort((a, b) => a.priority - b.priority);
+
+const nextApplications = [
+  {
+    name: "Webflow Affiliate",
+    status: "Next direct application candidate",
+    reason: "Web制作、ひとり事業サイト、LP、サービス紹介ページという既存テーマと相性がよく、個別記事と比較ページがすでにあります。",
+    readiness: "Webflow個別記事、無料プラン確認記事、Web制作ツール比較、申請準備ログ、メディアキットを接続済み。",
+    href: "/articles/webflow-affiliate-application-readiness/"
+  },
+  {
+    name: "Kit / beehiiv",
+    status: "Newsletter candidates",
+    reason: "読者リストづくりとニュースレター導線に合います。次は登録フォームや配信設計の記事を増やすと申請しやすくなります。",
+    readiness: "比較ページと個別記事はあり。実際のニュースレター導線をもう少し育てたい段階。",
+    href: "/compare/newsletter-tools/"
+  },
+  {
+    name: "HubSpot Affiliate",
+    status: "B2B SaaS candidate",
+    reason: "CRMと問い合わせ管理はPartnerStack系にも効くテーマ。小さな事業の顧客管理テンプレを増やすと強くなります。",
+    readiness: "無料CRMレビューとCRM比較ページはあり。運用テンプレ記事を追加すると説得力が増します。",
+    href: "/compare/crm-tools/"
+  }
+];
 ---
 
 <BaseLayout
@@ -32,6 +56,27 @@ const networks = affiliatePrograms
         <p>PartnerStackとimpact.comでは、媒体説明、読者、宣伝方法、所有サイトの確認が重要になります。申請前に、サイトの立ち位置を一度そろえます。</p>
       </div>
       <a class="button primary" href="/articles/partnerstack-impact-application-checklist/">申請前チェックを読む</a>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-heading">
+      <p class="eyebrow">Application Roadmap</p>
+      <h2>次に申請する順番</h2>
+      <p class="section-note">承認を急ぐより、各サービスを紹介する文脈がサイト上にあるかを見ながら進めます。</p>
+    </div>
+    <div class="affiliate-status-grid">
+      {nextApplications.map((item) => (
+        <article class="affiliate-program-card">
+          <p class="panel-label">{item.status}</p>
+          <h2>{item.name}</h2>
+          <p>{item.reason}</p>
+          <dl>
+            <div><dt>準備状況</dt><dd>{item.readiness}</dd></div>
+          </dl>
+          <p><a class="button primary" href={item.href}>準備ページを見る</a></p>
+        </article>
+      ))}
     </div>
   </section>
 
