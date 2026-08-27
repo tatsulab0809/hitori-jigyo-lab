@@ -68,6 +68,29 @@ const toolRoutes = [
 const priorityPrograms = affiliatePrograms.filter((program) =>
   ["webflow", "kit", "beehiiv"].includes(program.slug)
 );
+
+const siteStats = [
+  {
+    value: articles.length,
+    label: "公開記事",
+    description: "実験ログ、個別レビュー、比較前の確認記事を積み上げ中"
+  },
+  {
+    value: "5",
+    label: "比較ページ",
+    description: "ニュースレター、Web制作、CRM、画像制作、解析を用途別に整理"
+  },
+  {
+    value: affiliatePrograms.length,
+    label: "追跡中プログラム",
+    description: "海外ASPと直申請候補をステータス付きで管理"
+  },
+  {
+    value: "2",
+    label: "申請ログ",
+    description: "PartnerStackとimpact.comの申請・改善過程を公開記録"
+  }
+];
 ---
 
 <BaseLayout>
@@ -91,6 +114,21 @@ const priorityPrograms = affiliatePrograms.filter((program) =>
         </p>
       </div>
       <a class="button primary" href="/overseas-saas/">海外SaaS入門へ</a>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-title">
+      <h2>運営実績</h2>
+    </div>
+    <div class="media-proof-grid">
+      {siteStats.map((stat) => (
+        <article class="media-proof-card">
+          <strong>{stat.value}</strong>
+          <h3>{stat.label}</h3>
+          <p>{stat.description}</p>
+        </article>
+      ))}
     </div>
   </section>
 
@@ -130,6 +168,24 @@ const priorityPrograms = affiliatePrograms.filter((program) =>
             <span>{route.cta}</span>
           </a>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="partner-appeal">
+      <div>
+        <p class="panel-label">For Reviewers</p>
+        <h2>提携審査で確認しやすい情報を公開しています</h2>
+        <p>
+          媒体概要、レビュー基準、アフィリエイト開示、申請ログを分けて公開しています。
+          まだ小さな媒体ですが、読者に誤解を与えない紹介方針と、改善過程の透明性を重視しています。
+        </p>
+      </div>
+      <div class="button-row">
+        <a class="button primary" href="/for-partners/">媒体概要</a>
+        <a class="button" href="/review-policy/">レビュー基準</a>
+        <a class="button" href="/affiliate-disclosure/">広告リンクの開示</a>
       </div>
     </div>
   </section>
