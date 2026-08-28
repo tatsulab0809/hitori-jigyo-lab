@@ -5,6 +5,9 @@ const {
   title = "ひとり事業ラボ",
   description = "AIと海外SaaSで、ひとり事業を小さく作る実験室"
 } = Astro.props;
+
+const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 ---
 
 <!doctype html>
@@ -13,8 +16,20 @@ const {
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="impact-site-verification" value="4c93ea74-e0dc-42a8-8079-de8499b53721" />
+    {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    {gaMeasurementId && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}></script>
+        <script define:vars={{ gaMeasurementId }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag("js", new Date());
+          gtag("config", gaMeasurementId);
+        </script>
+      </>
+    )}
   </head>
   <body>
     <header class="site-header">
