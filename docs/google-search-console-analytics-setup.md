@@ -6,6 +6,7 @@
 - `sitemap.xml` is generated at `https://hitori-jigyo-lab.com/sitemap.xml`.
 - Google Search Console verification can be added with `PUBLIC_GOOGLE_SITE_VERIFICATION`.
 - GA4 measurement can be added with `PUBLIC_GA_MEASUREMENT_ID`.
+- Current GA4 measurement ID: `G-W48G5H34Q4`.
 
 ## Recommended setup order
 
@@ -16,9 +17,9 @@
 5. Build, commit, push, and wait for Cloudflare Pages deployment.
 6. Press Verify in Search Console.
 7. Submit `https://hitori-jigyo-lab.com/sitemap.xml`.
-8. Create a GA4 property and web stream.
-9. Add the measurement ID to `.env` as `PUBLIC_GA_MEASUREMENT_ID=G-...`.
-10. Build, commit, push, and verify realtime traffic.
+8. Create a GA4 property and web stream. Done: `G-W48G5H34Q4`.
+9. Add the measurement ID to Cloudflare Pages environment variables as `PUBLIC_GA_MEASUREMENT_ID=G-W48G5H34Q4`.
+10. Trigger a Cloudflare Pages deployment and verify realtime traffic.
 
 ## What to watch first
 
