@@ -1,7 +1,121 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import { articles } from "../data/articles.js";
 
 const { title, description, category, date, heroImage, heroImageAlt } = Astro.props;
+
+const currentPath = Astro.url.pathname.endsWith("/") ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const currentArticle = articles.find((article) => article.href === currentPath);
+
+const topicRules = [
+  {
+    topic: "application",
+    labels: ["partnerstack", "impact", "application", "linkedin", "affiliate"],
+    actions: [
+      { label: "Media Kit", title: "申請用メディアキット", href: "/media-kit/" },
+      { label: "For Partners", title: "英語の媒体概要", href: "/for-partners/" },
+      { label: "Programs", title: "紹介プログラム一覧", href: "/affiliate-programs/" },
+      { label: "Log", title: "実験ログを見る", href: "/lab-log/" }
+    ]
+  },
+  {
+    topic: "newsletter",
+    labels: ["newsletter", "kit", "beehiiv"],
+    actions: [
+      { label: "Compare", title: "ニュースレター比較", href: "/compare/newsletter-tools/" },
+      { label: "Newsletter", title: "ニュースレター準備", href: "/newsletter/" },
+      { label: "Tools", title: "発信用ツールを見る", href: "/tools/#newsletter-picks" },
+      { label: "Diagnosis", title: "ツール診断へ", href: "/diagnosis/" }
+    ]
+  },
+  {
+    topic: "website",
+    labels: ["webflow", "wordpress", "astro", "homepage", "server", "domain", "website"],
+    actions: [
+      { label: "Compare", title: "Web制作ツール比較", href: "/compare/website-tools/" },
+      { label: "Tools", title: "Web制作ツールを見る", href: "/tools/#website-picks" },
+      { label: "Diagnosis", title: "ツール診断へ", href: "/diagnosis/" },
+      { label: "Overseas", title: "海外SaaS入門へ", href: "/overseas-saas/" }
+    ]
+  },
+  {
+    topic: "analytics",
+    labels: ["analytics", "search-console"],
+    actions: [
+      { label: "Compare", title: "アクセス解析ツール比較", href: "/compare/analytics-tools/" },
+      { label: "Log", title: "月次運営ログ", href: "/monthly-log/" },
+      { label: "Tools", title: "ツール比較ハブ", href: "/tools/" },
+      { label: "Media", title: "申請用メディアキット", href: "/media-kit/" }
+    ]
+  },
+  {
+    topic: "crm",
+    labels: ["hubspot", "crm"],
+    actions: [
+      { label: "Compare", title: "CRMツール比較", href: "/compare/crm-tools/" },
+      { label: "Tools", title: "CRM候補を見る", href: "/tools/#crm-picks" },
+      { label: "Diagnosis", title: "ツール診断へ", href: "/diagnosis/" },
+      { label: "Programs", title: "紹介プログラム一覧", href: "/affiliate-programs/" }
+    ]
+  },
+  {
+    topic: "image",
+    labels: ["canva", "image", "eyecatch"],
+    actions: [
+      { label: "Compare", title: "画像制作ツール比較", href: "/compare/image-tools/" },
+      { label: "Tools", title: "画像制作ツールを見る", href: "/tools/#image-picks" },
+      { label: "Policy", title: "レビュー基準を見る", href: "/review-policy/" },
+      { label: "Diagnosis", title: "ツール診断へ", href: "/diagnosis/" }
+    ]
+  },
+  {
+    topic: "overseas",
+    labels: ["overseas-saas", "saas", "cancel", "payment"],
+    actions: [
+      { label: "Overseas", title: "海外SaaS入門ハブ", href: "/overseas-saas/" },
+      { label: "Tools", title: "ツール比較ハブ", href: "/tools/" },
+      { label: "Programs", title: "紹介プログラム一覧", href: "/affiliate-programs/" },
+      { label: "Diagnosis", title: "ツール診断へ", href: "/diagnosis/" }
+    ]
+  }
+];
+
+const defaultActions = [
+  { label: "Diagnosis", title: "ツール診断へ", href: "/diagnosis/" },
+  { label: "Tools", title: "用途別ツール比較を見る", href: "/tools/" },
+  { label: "Overseas", title: "海外SaaS入門ハブへ", href: "/overseas-saas/" },
+  { label: "Newsletter", title: "実験ログ配信の準備を見る", href: "/newsletter/" }
+];
+
+function getTopic(article) {
+  const haystack = `${article?.href ?? currentPath} ${article?.title ?? title} ${article?.description ?? description} ${category}`.toLowerCase();
+  return topicRules.find((rule) => rule.labels.some((label) => haystack.includes(label))) ?? null;
+}
+
+function scoreArticle(article, activeTopic) {
+  const currentText = `${currentArticle?.title ?? title} ${currentArticle?.description ?? description} ${category}`.toLowerCase();
+  const targetText = `${article.title} ${article.description} ${article.category} ${article.href}`.toLowerCase();
+  const words = currentText
+    .replace(/[、。・|/]/g, " ")
+    .split(/\s+/)
+    .filter((word) => word.length >= 3);
+
+  const topicScore = activeTopic?.labels.reduce((score, label) => score + (targetText.includes(label) ? 4 : 0), 0) ?? 0;
+  const categoryScore = article.category === category ? 3 : 0;
+  const wordScore = words.reduce((score, word) => score + (targetText.includes(word) ? 1 : 0), 0);
+
+  return topicScore + categoryScore + wordScore;
+}
+
+const activeTopic = getTopic(currentArticle);
+const relatedArticles = articles
+  .filter((article) => article.href !== currentPath)
+  .map((article) => ({ ...article, score: scoreArticle(article, activeTopic) }))
+  .filter((article) => article.score > 0)
+  .sort((a, b) => b.score - a.score || new Date(b.date).getTime() - new Date(a.date).getTime())
+  .slice(0, 3);
+
+const actionLinks = activeTopic?.actions ?? defaultActions;
 ---
 
 <BaseLayout title={`${title} | ひとり事業ラボ`} description={description}>
@@ -20,26 +134,34 @@ const { title, description, category, date, heroImage, heroImageAlt } = Astro.pr
       )}
       <div class="article-body">
         <slot />
+        {relatedArticles.length > 0 && (
+          <section class="article-related">
+            <p class="panel-label">Related Reading</p>
+            <h2>この記事の次に読むなら</h2>
+            <div class="article-related-list">
+              {relatedArticles.map((article) => (
+                <a href={article.href}>
+                  <img src={article.image} alt="" />
+                  <div>
+                    <span>{article.category} / {article.date}</span>
+                    <strong>{article.title}</strong>
+                    <p>{article.description}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
         <section class="article-next-links">
-          <p class="panel-label">Next Reading</p>
-          <h2>次に読むなら</h2>
+          <p class="panel-label">Next Action</p>
+          <h2>目的に合わせて次へ進む</h2>
           <div class="article-next-grid">
-            <a href="/tools/">
-              <span>Tools</span>
-              <strong>用途別ツール比較を見る</strong>
-            </a>
-            <a href="/overseas-saas/">
-              <span>Overseas SaaS</span>
-              <strong>海外SaaS入門ハブへ</strong>
-            </a>
-            <a href="/editorial-policy/">
-              <span>Policy</span>
-              <strong>編集方針を確認する</strong>
-            </a>
-            <a href="/newsletter/">
-              <span>Newsletter</span>
-              <strong>実験ログ配信の準備を見る</strong>
-            </a>
+            {actionLinks.map((link) => (
+              <a href={link.href}>
+                <span>{link.label}</span>
+                <strong>{link.title}</strong>
+              </a>
+            ))}
           </div>
         </section>
       </div>
