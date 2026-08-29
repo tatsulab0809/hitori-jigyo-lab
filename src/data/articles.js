@@ -1,5 +1,29 @@
 export const articles = [
   {
+    title: "日本にいながら海外向けサービスを作る実験を始めました",
+    description: "Japan Local Deskという海外向けスモールビジネスを立ち上げた理由、狙う読者、サービス設計、ひとり事業として小さく検証する方針を記録します。",
+    href: "/articles/japan-local-desk-launch-log/",
+    category: "副業実験ログ",
+    date: "2026-08-29",
+    image: "/images/eyecatch-japan-local-desk-launch-comic.png"
+  },
+  {
+    title: "ChatGPT Sitesで海外向けサービスサイトを作ってみた記録",
+    description: "Japan Local Deskの公式サイトをChatGPT Sitesで作った流れ、ページ構成、公開設定、独自ドメインを後回しにした判断を記録します。",
+    href: "/articles/jld-chatgpt-sites-build-log/",
+    category: "AIツール実験",
+    date: "2026-08-29",
+    image: "/images/eyecatch-jld-chatgpt-sites-build-comic.png"
+  },
+  {
+    title: "Mediumを海外向け集客メディアとして使い直す実験",
+    description: "既存MediumアカウントをJapan Local Deskへリブランドし、英語記事、既存記事、CTA、画像方針を整えて海外向けサービスの信頼導線にする実験記録です。",
+    href: "/articles/jld-medium-rebrand-content-marketing/",
+    category: "副業実験ログ",
+    date: "2026-08-29",
+    image: "/images/eyecatch-jld-medium-rebrand-comic.png"
+  },
+  {
     title: "PartnerStackに日本の個人サイトで申請するとき何を書くか",
     description: "PartnerStackに日本の個人サイトで申請する前に、媒体説明、販売チャネル、LinkedIn、トラフィック、報酬希望をどう整理するかを実体験ベースでまとめます。",
     href: "/articles/partnerstack-application-japan-guide/",
