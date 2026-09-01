@@ -1,5 +1,28 @@
 export const articles = [
   {
+    title: "JLDのSubstackを海外向けメディアの中心にすることにした",
+    description: "Japan Local DeskのSubstackを整え、独自サイトやMediumと役割を分けながら、海外向けメディア事業として育てる方針を記録します。",
+    href: "/articles/jld-substack-media-setup/",
+    category: "副業実験ログ",
+    date: "2026-09-01",
+    image: "/images/eyecatch-jld-substack-media-setup-comic.png"
+  },
+  {
+    title: "アフィリエイト審査に落ちてもUbigi承認から収益導線を作れた話",
+    description: "Japan Local DeskでeSIMアフィリエイトに挑戦し、AiraloとHolaflyは落ちた一方でUbigiに承認された流れと、読者向け比較ページへの変換を記録します。",
+    href: "/articles/jld-affiliate-rejection-ubigi-route/",
+    category: "副業実験ログ",
+    date: "2026-09-01",
+    image: "/images/eyecatch-jld-affiliate-rejection-ubigi-comic.png"
+  },
+  {
+    title: "JLDのトップページをサービス紹介から旅行メディア導線へ変えた理由",
+    description: "Japan Local Deskのトップページを、実務代行サービス中心から旅行記事、無料チェックリスト、eSIM比較へ流れるメディア型導線に組み替えた記録です。",
+    href: "/articles/jld-travel-media-homepage-funnel/",
+    category: "副業実験ログ",
+    date: "2026-09-01",
+    image: "/images/eyecatch-jld-travel-media-funnel-comic.png"
+  },  {
     title: "日本にいながら海外向けサービスを作る実験を始めました",
     description: "Japan Local Deskという海外向けスモールビジネスを立ち上げた理由、狙う読者、サービス設計、ひとり事業として小さく検証する方針を記録します。",
     href: "/articles/japan-local-desk-launch-log/",

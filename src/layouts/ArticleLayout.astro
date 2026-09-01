@@ -9,6 +9,15 @@ const currentArticle = articles.find((article) => article.href === currentPath);
 
 const topicRules = [
   {
+    topic: "jld",
+    labels: ["jld", "japan local desk", "substack", "ubigi", "esim"],
+    actions: [
+      { label: "Series", title: "JLD立ち上げログ", href: "/articles/japan-local-desk-launch-log/" },
+      { label: "Substack", title: "Substack設計の記録", href: "/articles/jld-substack-media-setup/" },
+      { label: "Affiliate", title: "Ubigi承認と収益導線", href: "/articles/jld-affiliate-rejection-ubigi-route/" },
+      { label: "Funnel", title: "トップページ導線設計", href: "/articles/jld-travel-media-homepage-funnel/" }
+    ]
+  },  {
     topic: "application",
     labels: ["partnerstack", "impact", "application", "linkedin", "affiliate"],
     actions: [
