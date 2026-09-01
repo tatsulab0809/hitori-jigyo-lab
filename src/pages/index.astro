@@ -115,16 +115,64 @@ const liveUpdates = [
     cta: "申請資料を見る"
   }
 ];
+const heroSignals = [
+  {
+    icon: "ai",
+    title: "AI",
+    description: "作業短縮"
+  },
+  {
+    icon: "saas",
+    title: "SaaS",
+    description: "海外ツール"
+  },
+  {
+    icon: "compare",
+    title: "比較",
+    description: "導入前チェック"
+  },
+  {
+    icon: "log",
+    title: "ログ",
+    description: "申請と改善"
+  },
+  {
+    icon: "letter",
+    title: "発信",
+    description: "読者づくり"
+  }
+];
 ---
 
 <BaseLayout>
   <section class="intro">
-    <p class="eyebrow">AI / SaaS / Solo Business Lab</p>
-    <h1>AIと海外SaaSで、ひとり事業を小さく作る実験室</h1>
-    <p>
-      TATSUがCodex、海外AIツール、Web制作サービス、発信ツールを実際に試しながら、
-      日本の個人事業主や副業者にとって本当に使えるかを記録します。
-    </p>
+    <div class="intro-copy">
+      <p class="eyebrow">AI / SaaS / Solo Business Lab</p>
+      <h1>AIと海外SaaSで、ひとり事業を小さく作る実験室</h1>
+      <p>
+        TATSUがCodex、海外AIツール、Web制作サービス、発信ツールを実際に試しながら、
+        日本の個人事業主や副業者にとって本当に使えるかを記録します。
+      </p>
+      <div class="hero-signal-row" aria-label="ひとり事業ラボで扱うテーマ">
+        {heroSignals.map((signal) => (
+          <a class="hero-signal" href={signal.icon === "ai" ? "/categories/ai-tools/" : signal.icon === "saas" ? "/overseas-saas/" : signal.icon === "compare" ? "/compare/" : signal.icon === "log" ? "/lab-log/" : "/newsletter/"}>
+            <span class={`signal-icon ${signal.icon}`} aria-hidden="true"></span>
+            <span>
+              <strong>{signal.title}</strong>
+              <small>{signal.description}</small>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+    <div class="intro-visual" aria-hidden="true">
+      <img src="/images/home-solo-business-lab-visual.png" alt="" />
+      <div class="visual-note">
+        <span>Live Lab</span>
+        <strong>{articles.length}</strong>
+        <small>public notes</small>
+      </div>
+    </div>
   </section>
 
   <section class="section compact">
