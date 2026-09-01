@@ -32,28 +32,33 @@ const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "G-W48G5H34Q
     )}
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand" href="/">ひとり事業ラボ</a>
-        <p>AI / SaaS / Solo Business Lab</p>
-      </div>
-    </header>
-    <nav class="site-nav" aria-label="Primary navigation">
-      <div class="nav-inner">
-        <a href="/">ホーム</a>
-        <a href="/diagnosis/">診断</a>
-        <a href="/tools/">ツール比較</a>
-        <a href="/compare/">比較ページ</a>
-        <a href="/overseas-saas/">海外SaaS</a>
-        <a href="/newsletter/">ニュースレター</a>
-        <a href="/lab-log/">実験ログ</a>
-        <a href="/for-partners/">For Partners</a>
-        <a href="/media-kit/">Media Kit</a>
-        <a href="/categories/experiment-log/">実験カテゴリ</a>
-        <a href="/articles/">記事一覧</a>
-        <a href="/about/">このサイトについて</a>
-      </div>
-    </nav>
+    <div class="site-masthead">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="/" aria-label="ひとり事業ラボ ホーム">
+            <span class="brand-mark" aria-hidden="true">1</span>
+            <span class="brand-text">ひとり事業ラボ</span>
+          </a>
+          <p>AI / SaaS / Solo Business Lab</p>
+        </div>
+      </header>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-inner">
+          <a href="/">ホーム</a>
+          <a href="/diagnosis/">診断</a>
+          <a href="/tools/">ツール比較</a>
+          <a href="/compare/">比較ページ</a>
+          <a href="/overseas-saas/">海外SaaS</a>
+          <a href="/newsletter/">ニュースレター</a>
+          <a href="/lab-log/">実験ログ</a>
+          <a href="/for-partners/">For Partners</a>
+          <a href="/media-kit/">Media Kit</a>
+          <a href="/categories/experiment-log/">実験カテゴリ</a>
+          <a href="/articles/">記事一覧</a>
+          <a href="/about/">このサイトについて</a>
+        </div>
+      </nav>
+    </div>
     <main>
       <slot />
     </main>
